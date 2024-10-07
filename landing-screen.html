@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dashboard</title>
+  <link rel="shortcut icon" href="" id="navIco">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-theme="default" data-layout="fluid" data-sidebar-position="left" data-sidebar-behavior="sticky">
+  <div class="wrapper ">
+    <!-- <nav id="sidebar" class="sidebar ">
+            <div class="sidebar-content js-simplebar">
+                <a class="sidebar-brand logo-background" href="/dashboard">
+                    <img height="70" style="max-width: 200px;" id="navLogo" />
+                </a>
+                <ul class="sidebar-nav">
+                    <li class="sidebar-item"><a class="sidebar-link" href="/members"><i class="align-middle"
+                                data-feather="layout"></i> Member</a>
+                    </li>
+
+                    <li class="sidebar-item"><a role="button" class="sidebar-link collapsed"
+                            data-bs-target="#PARENT_157199" data-bs-toggle="collapse"><i class="align-middle"
+                                data-feather="layout"></i> Allocation</a>
+                        <ul id="PARENT_157199" class="sidebar-dropdown list-unstyled collapse"
+                            data-bs-parent="#sidebar">
+                            <li class="sidebar-item"><a class="sidebar-link" href="/roomcoins"><i class="align-middle"
+                                        data-feather="layout"></i> Room Coins</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="/tripcoins"><i class="align-middle"
+                                        data-feather="layout"></i> Trip Coins</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="/gifttripcoins"><i
+                                        class="align-middle" data-feather="layout"></i> Trip Coin as Gift</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="/cruisecoins"><i class="align-middle"
+                                        data-feather="layout"></i> Cruise Coins</a></li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item"><a role="button" class="sidebar-link collapsed"
+                            data-bs-target="#PARENT_812421" data-bs-toggle="collapse"><i class="align-middle"
+                                data-feather="layout"></i> Report</a>
+                        <ul id="PARENT_812421" class="sidebar-dropdown list-unstyled collapse"
+                            data-bs-parent="#sidebar">
+                            <li class="sidebar-item"><a class="sidebar-link" href="/member-stats"><i
+                                        class="align-middle" data-feather="layout"></i> Member Statistics</a></li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="/sso-members"><i class="align-middle"
+                                data-feather="layout"></i> Club Access (SSO)</a></li>
+                    <li class="sidebar-item"><a role="button" class="sidebar-link collapsed"
+                            data-bs-target="#PARENT_586911" data-bs-toggle="collapse"><i class="align-middle"
+                                data-feather="layout"></i> Analytics</a>
+                        <ul id="PARENT_586911" class="sidebar-dropdown list-unstyled collapse"
+                            data-bs-parent="#sidebar">
+                            <li class="sidebar-item"><a class="sidebar-link" href="/quicksight/order"><i
+                                        class="align-middle" data-feather="layout"></i> Order</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="/quicksight/member"><i
+                                        class="align-middle" data-feather="layout"></i> Member</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+
+            </div>
+        </nav>  -->
+    <div class="main bg-white">
+      <div class="landing_screen_section">
+        <div class="container">
+          <nav class="navbar navbar-expand navbar-light navbar-bg border-0">
+            <!-- <a class="sidebar-toggle">
+          <i class="bi bi-list align-self-center"></i>
+          </a> -->
+            <a class="navbar-brand" href="#">
+              <img src="images/logo.svg" alt="" class="img-fluid w-75">
+            </a>
+            <div class="navbar-collapse collapse">
+              <ul class="navbar-nav navbar-align ms-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-bs-toggle="dropdown">
+                    <i class="bi bi-gear"></i>
+                  </a>
+                  <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
+                    <span class="login_name">R</span>
+                    <span class="rounded-circle me-1 displayName text-white fw-bold">Rohit Danve</span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-end">
+                    <a class="dropdown-item" role="button" data-bs-toggle="modal" data-bs-target="#changePassword">
+                      RohitPuranik@gmail.com
+                    </a>
+                    <a class="dropdown-item border-0" role="button" onclick="signout()">
+                      Log Out
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="text-center hight_class">
+            <img src="images/white-suvidha-logo.svg" class="w-25 " alt="">
+          </div>
+        </div>
+      </div>
+
+      <section class="content card_section">
+        <div class="container p-3">
+          <div class="row card_set_class shadow-lg p-5 bg-white rounded">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 py-3">
+              <a href="cafeteria-management.html">
+                <div class="cards text-center">
+                  <img src="images/cafeteria.png" class="img-fluid" alt="">
+                  <h5 class="pt-3">Cafeteria</h5>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 py-3">
+              <a href="">
+                <div class="cards text-center">
+                  <img src="images/meeting-room.png" class="img-fluid" alt="">
+                  <h5 class="pt-3">Meeting Room</h5>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 py-3">
+              <a href="">
+                <div class="cards text-center">
+                  <img src="images/visitor-management.png" class="img-fluid" alt="">
+                  <h5 class="pt-3">Visitor Management</h5>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 py-3">
+              <a href="">
+                <div class="cards text-center">
+                  <img src="images/vehicle-booking.png" class="img-fluid" alt="">
+                  <h5 class="pt-3">Vehicle Booking</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </div><!--main-->
+  </div><!--wrapper-->
+
+  <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

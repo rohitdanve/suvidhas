@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="shortcut icon" href="" id="navIco">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-theme="default" data-layout="fluid" data-sidebar-position="left" data-sidebar-behavior="sticky"
+    background="#ececec">
+    <div class="wrapper ">
+        <nav id="sidebar" class="sidebar bg-white">
+            <div class="sidebar-content js-simplebar">
+                <a class="sidebar-brand logo-background" href="">
+                    <img src="images/logo.svg" alt="">
+                </a>
+                <ul class="sidebar-nav">
+                    <li class="sidebar-item"><a class="sidebar-link" href="cafeteria-management.html"><i
+                                class="border-0 bi bi-house-door h4"></i> Home </a>
+                    </li>
+                    <li class="sidebar-item"><a class="sidebar-link active" href=""><i
+                                class="border-0 bi bi-menu-down h4"></i>
+                            Menu </a>
+                    </li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="cafeteria-my-booking.html"><i
+                                class="border-0 bi bi-journal-check h4"></i> Booking </a>
+                    </li>
+                    <li class="sidebar-item"><a class="sidebar-link" href=""><i class="border-0 bi bi-cart h4"></i> My
+                            Cart </a>
+                    </li>
+                    <li class="sidebar-item"><a class="sidebar-link" href=""><i class="border-0 bi bi-people h4"></i>
+                            Visitor Food Booking </a>
+                    </li>
+
+                    <li class="sidebar-item"><a role="button" class="sidebar-link collapsed" data-bs-target="#id-1"
+                            data-bs-toggle="collapse"><i class="border-0 bi bi-person h4"></i> Admin</a>
+                        <ul id="id-1" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item"><a class="sidebar-link" href=""><i class="align-middle"
+                                        data-feather="layout"></i>Main Admin</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href=""><i class="align-middle"
+                                        data-feather="layout"></i> Sub Admin</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="sidebar-item"><a role="button" class="sidebar-link collapsed" data-bs-target="#id-2"
+                            data-bs-toggle="collapse"><i class="border-0 bi bi-journal-richtext h4"></i> Report</a>
+                        <ul id="id-2" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item"><a class="sidebar-link" href=""><i class="align-middle"
+                                        data-feather="layout"></i> Member Report</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+
+
+            </div>
+        </nav>
+        <div class="main bg-white">
+            <header class="dashboard_color content flex-grow-0">
+                <div class="container">
+                    <nav class="navbar navbar-expand navbar-light navbar-bg">
+                        <a class="sidebar-toggle d-lg-none d-block">
+                            <i class="bi bi-list align-self-center"></i>
+                        </a>
+                        <a href="" class="fw-bold d-lg-block d-none">Cafeteria Management</a>
+                        <!-- <a class="navbar-brand" href="#">
+                        <img src="images/logo.svg" alt="" class="img-fluid w-75">
+                        </a> -->
+                        <div class="navbar-collapse collapse">
+                            <ul class="navbar-nav navbar-align ms-auto">
+                                <li class="nav-item dropdown text-end center_clsss">
+                                    <a href="" class="pe-3">
+                                        <img src="images/suvidha.svg" class="img-fluid" width="150" alt="">
+                                    </a>
+                                    <a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#"
+                                        data-bs-toggle="dropdown">
+                                        <i class="bi bi-gear"></i>
+                                    </a>
+
+                                    <a class="nav-link black_arrow dropdown-toggle d-none d-sm-inline-block" href="#"
+                                        data-bs-toggle="dropdown">
+                                        <span class="login_name">R</span>
+                                        <span class="rounded-circle me-1 displayName  fw-bold">Rohit
+                                            Danve</span>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-end">
+                                        <a class="dropdown-item" role="button" data-bs-toggle="modal"
+                                            data-bs-target="#changePassword">
+                                            RohitPuranik@gmail.com
+                                        </a>
+                                        <a class="dropdown-item border-0" role="button" href="index.html">
+                                            Log Out
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+            <section class="content flex-grow-0 cafeteria-menu_section">
+
+                <div class="container p-3">
+                    <a href="" class="fw-bold text-center d-lg-none d-block">Cafeteria Management</a>
+                    <div class="row">
+                        <div class="col-lg-12 py-3">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="Breakfast-tab" data-bs-toggle="tab"
+                                        data-bs-target="#Breakfast" type="button" role="tab" aria-controls="Breakfast"
+                                        aria-selected="true"><img src="images/icons/Group-4.png" width="50" class="pe-2"
+                                            alt=""> Breakfast</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="Lunch-tab" data-bs-toggle="tab" data-bs-target="#Lunch"
+                                        type="button" role="tab" aria-controls="Lunch" aria-selected="false"><img
+                                            src="images/icons/Group-1.png" width="50" class="pe-2" alt="">
+                                        Lunch</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="Snacks-tab" data-bs-toggle="tab"
+                                        data-bs-target="#Snacks" type="button" role="tab" aria-controls="Snacks"
+                                        aria-selected="false"><img src="images/icons/Group-2.png" width="50"
+                                            class="pe-2" alt=""> Evening Snacks</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="Weekly-tab" data-bs-toggle="tab"
+                                        data-bs-target="#Weekly" type="button" role="tab" aria-controls="Weekly"
+                                        aria-selected="false"><img src="images/icons/Group-3.png" width="50"
+                                            class="pe-2" alt=""> Weekly Menu List</button>
+                                </li>
+                            </ul>
+                            <!-- ------tabber 1------------ -->
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="Breakfast" role="tabpanel"
+                                    aria-labelledby="Breakfast-tab">
+                                    <div class="container py-5">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 py-5 px-4">
+                                                <div>
+                                                    <img src="images/menu/batata-vada.png" class="img-fluid w-100"
+                                                        alt="">
+                                                    <h5 class="my-2 py-1 text-center">Batata Wada Sambar</h5>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h4 class="mb-0"><span><i class="bi bi-currency-rupee"></i>
+                                                        </span>30.00</h4>
+                                                    <div class="button-container pt-1 w-50" data-id="1">
+                                                        <button class="border-0 bg-white h3 decrement"><i
+                                                                class="bi bi-dash"></i></button>
+                                                        <input type="text" class="w-25 h4 border-0 text-center"
+                                                            value="0" readonly>
+                                                        <button class="border-0 bg-white h3 increment"><i
+                                                                class="bi bi-plus"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 py-5 px-4">
+                                                <div>
+                                                    <img src="images/menu/sabudan-khichadi.png" class="img-fluid w-100"
+                                                        alt="">
+                                                    <h5 class="my-2 py-1 text-center">Sabudana Khichadi</h5>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h4 class="mb-0"><span><i class="bi bi-currency-rupee"></i>
+                                                        </span>30.00</h4>
+                                                    <button
+                                                        class="btn bg-white shadow w-50 h-100 py-2 text-success fs-5 fw-bolder">ADD</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 py-5 px-4">
+                                                <div>
+                                                    <img src="images/menu/Pohe.png" class="img-fluid w-100" alt="">
+                                                    <h5 class="my-2 py-1 text-center">Kande Pohe</h5>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h4 class="mb-0"><span><i class="bi bi-currency-rupee"></i>
+                                                        </span>30.00</h4>
+                                                    <button
+                                                        class="btn bg-white shadow w-50 h-100 py-2 text-success fs-5 fw-bolder">ADD</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 py-5 px-4">
+                                                <div>
+                                                    <img src="images/menu/Vegetable-Upma.png" class="img-fluid w-100"
+                                                        alt="">
+                                                    <h5 class="my-2 py-1 text-center">Upma</h5>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h4 class="mb-0"><span><i class="bi bi-currency-rupee"></i>
+                                                        </span>30.00</h4>
+                                                    <button
+                                                        class="btn bg-white shadow w-50 h-100 py-2 text-success fs-5 fw-bolder">ADD</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ------tabber 2------------ -->
+                                <div class="tab-pane fade" id="Lunch" role="tabpanel" aria-labelledby="Lunch-tab">
+                                    <div class="container py-5">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 py-5 px-4">
+                                                <div>
+                                                    <img src="images/menu/Lunch-Meal.png" class="img-fluid w-100"
+                                                        alt="">
+                                                    <h5 class="my-2 py-1 text-center">Lunch Meal</h5>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h4 class="mb-0"><span><i class="bi bi-currency-rupee"></i>
+                                                        </span>30.00</h4>
+                                                    <div class="button-container pt-1 w-50" data-id="2">
+                                                        <button class="border-0 bg-white h3 decrement"><i
+                                                                class="bi bi-dash"></i></button>
+                                                        <input type="text" class="w-25 h4 border-0 text-center"
+                                                            value="0" readonly>
+                                                        <button class="border-0 bg-white h3 increment"><i
+                                                                class="bi bi-plus"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 py-5 px-4">
+                                                <div>
+                                                    <img src="images/menu/chapati.png" class="img-fluid w-100" alt="">
+                                                    <h5 class="my-2 py-1 text-center">chapati</h5>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h4 class="mb-0"><span><i class="bi bi-currency-rupee"></i>
+                                                        </span>30.00</h4>
+                                                    <button
+                                                        class="btn bg-white shadow w-50 h-100 py-2 text-success fs-5 fw-bolder">ADD</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 py-5 px-4">
+                                                <div>
+                                                    <img src="images/menu/Ghadichi-Chapati.png" class="img-fluid w-100"
+                                                        alt="">
+                                                    <h5 class="my-2 py-1 text-center">Ghadichi Chapati</h5>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h4 class="mb-0"><span><i class="bi bi-currency-rupee"></i>
+                                                        </span>30.00</h4>
+                                                    <button
+                                                        class="btn bg-white shadow w-50 h-100 py-2 text-success fs-5 fw-bolder">ADD</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 py-5 px-4">
+                                                <div>
+                                                    <img src="images/menu/Butter-Milk.png" class="img-fluid w-100"
+                                                        alt="">
+                                                    <h5 class="my-2 py-1 text-center">Butter Milk</h5>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h4 class="mb-0"><span><i class="bi bi-currency-rupee"></i>
+                                                        </span>30.00</h4>
+                                                    <button
+                                                        class="btn bg-white shadow w-50 h-100 py-2 text-success fs-5 fw-bolder">ADD</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ------tabber 3------------ -->
+                                <div class="tab-pane fade" id="Snacks" role="tabpanel" aria-labelledby="Snacks-tab">
+                                    <div class="container py-5">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 py-5 px-4">
+                                                <div>
+                                                    <img src="images/menu/Lunch-Meal.png" class="img-fluid w-100"
+                                                        alt="">
+                                                    <h5 class="my-2 py-1 text-center">Lunch Meal</h5>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h4 class="mb-0"><span><i class="bi bi-currency-rupee"></i>
+                                                        </span>30.00</h4>
+                                                    <div class="button-container pt-1 w-50" data-id="3">
+                                                        <button class="border-0 bg-white h3 decrement"><i
+                                                                class="bi bi-dash"></i></button>
+                                                        <input type="text" class="w-25 h4 border-0 text-center"
+                                                            value="0" readonly>
+                                                        <button class="border-0 bg-white h3 increment"><i
+                                                                class="bi bi-plus"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 py-5 px-4">
+                                                <div>
+                                                    <img src="images/menu/chapati.png" class="img-fluid w-100" alt="">
+                                                    <h5 class="my-2 py-1 text-center">chapati</h5>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h4 class="mb-0"><span><i class="bi bi-currency-rupee"></i>
+                                                        </span>30.00</h4>
+                                                    <button
+                                                        class="btn bg-white shadow w-50 h-100 py-2 text-success fs-5 fw-bolder">ADD</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 py-5 px-4">
+                                                <div>
+                                                    <img src="images/menu/Ghadichi-Chapati.png" class="img-fluid w-100"
+                                                        alt="">
+                                                    <h5 class="my-2 py-1 text-center">Ghadichi Chapati</h5>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h4 class="mb-0"><span><i class="bi bi-currency-rupee"></i>
+                                                        </span>30.00</h4>
+                                                    <button
+                                                        class="btn bg-white shadow w-50 h-100 py-2 text-success fs-5 fw-bolder">ADD</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 py-5 px-4">
+                                                <div>
+                                                    <img src="images/menu/Butter-Milk.png" class="img-fluid w-100"
+                                                        alt="">
+                                                    <h5 class="my-2 py-1 text-center">Butter Milk</h5>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h4 class="mb-0"><span><i class="bi bi-currency-rupee"></i>
+                                                        </span>30.00</h4>
+                                                    <button
+                                                        class="btn bg-white shadow w-50 h-100 py-2 text-success fs-5 fw-bolder">ADD</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ------tabber 4------------ -->
+                                <div class="tab-pane fade" id="Weekly" role="tabpanel" aria-labelledby="Weekly-tab">                                    
+                                    <div class="container py-5">
+                                          <div class="row">
+                                                <div class="col-lg-12 d-flex">
+                                                    <h5 style="color:#EC6D3D" class="pe-5">Current Week - 12 may 2024 to 18 may 2024</h5>
+                                                    <h5 class="text-center" style="color:;">Next Week</h5>                                                    
+                                                </div>
+                                                <div class="table-responsive">
+                                                    <table>
+                                                        <thead>
+                                                          <tr>
+                                                            <th>Monday</th>
+                                                            <th>Tuesday</th>
+                                                            <th>Wednesday</th>
+                                                            <th>Thursday</th>
+                                                            <th>Friday</th>
+                                                          </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                          <!-- Breakfast -->
+                                                          <tr>
+                                                            <td colspan="5" class="colspan-5">Breakfast - 8 am - 8.30 am</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td><div class="meal-item">Poha</div></td>
+                                                            <td><div class="meal-item">Misal Pav</div></td>
+                                                            <td><div class="meal-item">Puri Bhaji</div></td>
+                                                            <td><div class="meal-item">Idali Sambar/ Shabudana Khichadi</div></td>
+                                                            <td><div class="meal-item">Upma, Bread Omlet single egg</div></td>
+                                                          </tr>
+                                                          
+                                                          <!-- Lunch -->
+                                                          <tr>
+                                                            <td colspan="5" class="colspan-5">Lunch</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>
+                                                              <div class="meal-item">Chapati</div>
+                                                              <div class="meal-item">Butter Milk</div>
+                                                              <div class="meal-item">Lunch Meal</div>
+                                                              <div class="meal-item">Gulab Jamun</div>
+                                                              <div class="meal-item">Ghadichi Chapati</div>
+                                                              <div class="meal-item">Curd Bowl</div>
+                                                              <div class="meal-item">Rajma Masala</div>
+                                                              <div class="meal-item">Corn Soup</div>
+                                                            </td>
+                                                            <td>
+                                                              <div class="meal-item">Bharli wangi</div>
+                                                              <div class="meal-item">Chapati</div>
+                                                              <div class="meal-item">ButterMilk</div>
+                                                              <div class="meal-item">Lunch Meal</div>
+                                                              <div class="meal-item">Ghadichi Chapati</div>
+                                                              <div class="meal-item">Chawali Rassa</div>
+                                                              <div class="meal-item">Tomato Soup</div>
+                                                              <div class="meal-item">Methi Parath With Aloo</div>
+                                                            </td>
+                                                            <td>
+                                                              <div class="meal-item">Bharli wangi</div>
+                                                              <div class="meal-item">Chapati</div>
+                                                              <div class="meal-item">ButterMilk</div>
+                                                              <div class="meal-item">Lunch Meal</div>
+                                                              <div class="meal-item">Ghadichi Chapati</div>
+                                                              <div class="meal-item">Chawali Rassa</div>
+                                                              <div class="meal-item">Tomato Soup</div>
+                                                              <div class="meal-item">Methi Parath With Aloo</div>
+                                                            </td>
+                                                            <td>
+                                                              <div class="meal-item">Bharli wangi</div>
+                                                              <div class="meal-item">Chapati</div>
+                                                              <div class="meal-item">ButterMilk</div>
+                                                              <div class="meal-item">Lunch Meal</div>
+                                                              <div class="meal-item">Ghadichi Chapati</div>
+                                                              <div class="meal-item">Chawali Rassa</div>
+                                                              <div class="meal-item">Tomato Soup</div>
+                                                              <div class="meal-item">Methi Parath With Aloo</div>
+                                                            </td>
+                                                            <td>
+                                                              <div class="meal-item">Bharli wangi</div>
+                                                              <div class="meal-item">Chapati</div>
+                                                              <div class="meal-item">ButterMilk</div>
+                                                              <div class="meal-item">Lunch Meal</div>
+                                                              <div class="meal-item">Ghadichi Chapati</div>
+                                                              <div class="meal-item">Chawali Rassa</div>
+                                                              <div class="meal-item">Tomato Soup</div>
+                                                              <div class="meal-item">Methi Parath With Aloo</div>
+                                                            </td>
+                                                          </tr>
+                                                    
+                                                          <!-- Healthy Food -->
+                                                          <tr>
+                                                            <td colspan="5" class="colspan-5">Healthy Food</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>
+                                                              <div class="meal-item">Green Salad</div>
+                                                              <div class="meal-item">Fruit Salad</div>
+                                                              <div class="meal-item">Potato Salad</div>
+                                                            </td>
+                                                            <td>
+                                                              <div class="meal-item">Green Salad</div>
+                                                              <div class="meal-item">Fruit Salad</div>
+                                                              <div class="meal-item">Potato Salad</div>
+                                                            </td>
+                                                            <td>
+                                                              <div class="meal-item">Green Salad</div>
+                                                              <div class="meal-item">Fruit Salad</div>
+                                                              <div class="meal-item">Potato Salad</div>
+                                                            </td>
+                                                            <td>
+                                                              <div class="meal-item">Green Salad</div>
+                                                              <div class="meal-item">Fruit Salad</div>
+                                                              <div class="meal-item">Potato Salad</div>
+                                                            </td>
+                                                            <td>
+                                                              <div class="meal-item">Green Salad</div>
+                                                              <div class="meal-item">Fruit Salad</div>
+                                                              <div class="meal-item">Potato Salad</div>
+                                                            </td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>
+                                                </div>
+                                          </div>  
+                                    </div>                                
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="text-center bg-white shadow-sm p-3 rounded-2 mb-5 mx-5">
+                                <a href="" class="fw-bolder">Click here for canteen guidlines</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+        </div><!--main-->
+    </div><!--wrapper-->
+
+    <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <script>
+        // Select all button containers
+        const buttonContainers = document.querySelectorAll('.button-container');
+
+        buttonContainers.forEach(container => {
+            const input = container.querySelector('input');
+            let value = parseInt(input.value);
+
+            // Increment button logic
+            container.querySelector('.increment').addEventListener('click', () => {
+                value++;
+                input.value = value;
+            });
+
+            // Decrement button logic
+            container.querySelector('.decrement').addEventListener('click', () => {
+                if (value > 0) {
+                    value--;
+                    input.value = value;
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
