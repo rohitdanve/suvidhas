@@ -11,6 +11,23 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/sidebar.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" rel="stylesheet">
+    <style>
+      .search-bar {
+            margin-bottom: 20px;
+        }
+        .btn-add {
+            background-color: #28a745;
+            color: #fff;
+        }
+        .btn-edit, .btn-clone {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .btn-tag {
+            background-color: #fd7e14;
+            color: #fff;
+        }
+    </style>
 </head>
 
 <body data-theme="default" data-layout="fluid" data-sidebar-position="left" data-sidebar-behavior="sticky"
@@ -22,16 +39,17 @@
                     <img src="images/logo.svg" alt="">
                 </a>
                 <ul class="sidebar-nav">
-                    <li class="sidebar-item"><a class="sidebar-link active" href="cafeteria-management.html"><i
+                    <li class="sidebar-item"><a class="sidebar-link" href="cafeteria-management.html"><i
                                 class="border-0 bi bi-house-door h4"></i> Home </a>
                     </li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="cafeteria-menu.html"><i class="border-0 bi bi-menu-down h4"></i>
+                    <li class="sidebar-item"><a class="sidebar-link" href="cafeteria-menu.html"><i
+                                class="border-0 bi bi-menu-down h4"></i>
                             Menu </a>
                     </li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="cafeteria-my-booking.html"><i
+                    <li class="sidebar-item"><a class="sidebar-link active" href=""><i
                                 class="border-0 bi bi-journal-check h4"></i> Booking </a>
                     </li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="cafeteria-my-cart.html"><i class="border-0 bi bi-cart h4"></i> My
+                    <li class="sidebar-item"><a class="sidebar-link" href=""><i class="border-0 bi bi-cart h4"></i> My
                             Cart </a>
                     </li>
                     <li class="sidebar-item"><a class="sidebar-link" href=""><i class="border-0 bi bi-people h4"></i>
@@ -66,7 +84,8 @@
                         <a class="sidebar-toggle d-lg-none d-block">
                             <i class="bi bi-list align-self-center"></i>
                         </a>
-                        <a href="" class="fw-bold d-lg-block d-none">Cafeteria Management</a>
+                        <p class="fw-bold d-lg-block d-none">Cafeteria Management <a href="">/ My-Booking</a> </p>
+
                         <!-- <a class="navbar-brand" href="#">
               <img src="images/logo.svg" alt="" class="img-fluid w-75">
             </a> -->
@@ -103,48 +122,79 @@
                 </div>
             </header>
 
-            <section class="content flex-grow-0">
-
-                <div class="container p-3">
-                    <a href="" class="fw-bold text-center d-lg-none d-block">Cafeteria Management</a>
-                    <div class="row" style="height:400px;">
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-6 py-3">
-                            <a href="">
-                                <div class="cafeteria_cards text-center">
-                                    <img src="images/cafeteria-management/breakfast.svg" class="img-fluid" alt="">
-                                    <h5 class="pt-3">Breakfast</h5>
+            <section class="content flex-grow-0 my_booking_section">
+                <div class="container">
+                    <div class="row">
+                            <div class="col-lg-8 col-md-12 col-12">
+                                   <!-- Filter section with labels -->
+                                   <div class="d-flex">
+                                    <div class="pe-2">
+                                        <input type="text" class="form-control w-100" placeholder="Search for Menu">
+                                    </div>
+                                
+                                    <button type="button" class="search-button">Search</button>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-6 py-3">
-                            <a href="">
-                                <div class="cafeteria_cards text-center">
-                                    <img src="images/cafeteria-management/lunch.svg" class="img-fluid" alt="">
-                                    <h5 class="pt-3">Lunch</h5>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="table-responsive">
+                                    <!-- Orders Table -->
+                                    <table class="table table-striped table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Sr. No</th>
+                                                    <th>Location</th>
+                                                    <th>Menu Name</th>
+                                                    <th>Start Date</th>
+                                                    <th>End Time</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Praj Tower (Hinjewadi)</td>
+                                                    <td>Lunch</td>
+                                                    <td>15/05/24</td>
+                                                    <td>Active</td>
+                                                    <td>
+                                                        <button class="btn btn-clone">Clone</button>
+                                                        <button class="btn btn-edit">Edit</button>
+                                                        <button class="btn btn-tag">Tag Item</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Praj Tower (Hinjewadi)</td>
+                                                    <td>Lunch</td>
+                                                    <td>15/05/24</td>
+                                                    <td>Active</td>
+                                                    <td>
+                                                        <button class="btn btn-clone">Clone</button>
+                                                        <button class="btn btn-edit">Edit</button>
+                                                        <button class="btn btn-tag">Tag Item</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Praj Tower (Hinjewadi)</td>
+                                                    <td>Lunch</td>
+                                                    <td>15/05/24</td>
+                                                    <td>Active</td>
+                                                    <td>
+                                                        <button class="btn btn-clone">Clone</button>
+                                                        <button class="btn btn-edit">Edit</button>
+                                                        <button class="btn btn-tag">Tag Item</button>
+                                                    </td>
+                                                </tr>
+                                                <!-- Add more rows as needed -->
+                                            </tbody>
+                                        </table>
                                 </div>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-6 py-3">
-                            <a href="">
-                                <div class="cafeteria_cards text-center">
-                                    <img src="images/cafeteria-management/Evening-Snacks.svg" class="img-fluid" alt="">
-                                    <h5 class="pt-3">Evening Snacks</h5>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-6 py-3">
-                            <a href="">
-                                <div class="cafeteria_cards text-center">
-                                    <img src="images/cafeteria-management/Weekly-Menu-List.svg" class="img-fluid"
-                                        alt="">
-                                    <h5 class="pt-3">Weekly Menu List</h5>
-                                </div>
-                            </a>
-                        </div>
-
+                            </div>
+                            
                     </div>
                 </div>
+
             </section>
 
 
