@@ -87,6 +87,14 @@ a.sidebar-link {
   display: flex;
   color: var(--primary-color) !important;
 }
+.sidebar-item  .sub_active {
+  border-right: 4px solid var(--primary-color);
+  height: 27px;
+  margin-left: 2px;
+  align-items: center;
+  display: flex;
+  color: var(--primary-color) !important;
+}
 
 body[data-theme=colored] .sidebar-link,
 body[data-theme=colored] a.sidebar-link {

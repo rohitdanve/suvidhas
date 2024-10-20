@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="shortcut icon" href="" id="navIco">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body data-theme="default" data-layout="fluid" data-sidebar-position="left" data-sidebar-behavior="sticky"
+    background="#ececec">
+    <div class="wrapper ">
+        <nav id="sidebar" class="sidebar bg-white">
+            <div class="sidebar-content js-simplebar">
+                <a class="sidebar-brand logo-background" href="">
+                    <img src="images/logo.svg" alt="">
+                </a>
+                <ul class="sidebar-nav">
+                    <li class="sidebar-item"><a class="sidebar-link" href="landing-screen.html"><i
+                                class="border-0 bi bi-house-door h4"></i> Home </a>
+                    </li>
+                    <li class="sidebar-item"><a class="sidebar-link active" href=""><i
+                                class="border-0 bi bi-journal-check h4"></i> Invite Visitor</a>
+                    </li>
+                    <li class="sidebar-item"><a class="sidebar-link " href="cafeteria-my-cart.html"><i
+                                class="border-0 bi bi-cart h4"></i> Security Gate Dashboard </a>
+                    </li>
+
+
+
+                </ul>
+            </div>
+        </nav>
+        <div class="main bg-white">
+            <header class="dashboard_color content flex-grow-0">
+                <div class="container">
+                    <nav class="navbar navbar-expand navbar-light navbar-bg">
+                        <a class="sidebar-toggle d-lg-none d-block">
+                            <i class="bi bi-list align-self-center"></i>
+                        </a>
+                        <p class="fw-bold d-lg-block d-none">Visitors Management<a href=""> / Invited Visitors
+                                Lookup</a> </p>
+
+                        <!-- <a class="navbar-brand" href="#">
+              <img src="images/logo.svg" alt="" class="img-fluid w-75">
+            </a> -->
+                        <div class="navbar-collapse collapse">
+                            <ul class="navbar-nav navbar-align ms-auto">
+                                <li class="nav-item dropdown text-end center_clsss">
+                                    <a href="" class="pe-3">
+                                        <img src="images/suvidha.svg" class="img-fluid" width="150" alt="">
+                                    </a>
+                                    <a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#"
+                                        data-bs-toggle="dropdown">
+                                        <i class="bi bi-gear"></i>
+                                    </a>
+
+                                    <a class="nav-link black_arrow dropdown-toggle d-none d-sm-inline-block" href="#"
+                                        data-bs-toggle="dropdown">
+                                        <span class="login_name">R</span>
+                                        <span class="rounded-circle me-1 displayName  fw-bold">Rohit
+                                            Danve</span>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-end">
+                                        <a class="dropdown-item" role="button" data-bs-toggle="modal"
+                                            data-bs-target="#changePassword">
+                                            RohitPuranik@gmail.com
+                                        </a>
+                                        <a class="dropdown-item border-0" role="button" onclick="signout()">
+                                            Log Out
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+            <section class="content flex-grow-0 py-5 meeting_room ">
+
+                <div class="container">
+                    <div class="row filter_section my-3">                        
+                        <div class=" col-xxl-8 col-xl-6 col-lg-12 col-md-12 col-sm-6 col-12 pt-2">
+                            <div class="">
+                                <a href="meeting-room-pick-date.html"
+                                    class="btn btn3 rounded-1 py-1 py-1 rounded-2 me-lg-2 my-1 me-md-1">All 13</a>
+                                <a href="meeting-room-pick-date.html"
+                                    class="btn btn2 rounded-1 py-1 py-1 rounded-2 me-lg-2 my-1 me-md-1">In Premise - 55</a>
+                                <a href="meeting-room-pick-date.html"
+                                    class="btn btn2 rounded-1 py-1 py-1 rounded-2 me-lg-2 my-1 me-md-1">Upcoming  - 31</a>
+                                <a href="meeting-room-pick-date.html"
+                                    class="btn btn2 rounded-1 py-1 py-1 rounded-2 me-lg-2 my-1 me-md-1">Cancelled  - 0</a>
+                                <a href="meeting-room-pick-date.html"
+                                    class="btn btn2 rounded-1 py-1 py-1 rounded-2 me-lg-2 my-1 me-md-1">Completed  - 0</a>
+                            </div>
+                        </div>
+                        <div
+                            class=" col-xxl-4 col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 pt-2 text-xxl-end text-lg-start">
+                            <div class="legend ms-3">
+                                <select class="form-select me-2">
+                                    <option selected>Praj Tower Hinjewadi</option>
+                                    <option>Location 2</option>
+                                    <option>Location 3</option>
+                                  </select>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="container my-4 bg-white p-4 rounded-2">
+                    <div class="row filter_section my-3">
+                        <div class=" col-xxl-3 col-xl-3 col-lg-4 col-md-4  col-sm-6 col-12 pt-2">
+                            <input type="text" class="form-control custom-input" placeholder="Search for menu">
+                        </div>
+                        <div class=" col-xxl-3 col-xl-6 col-lg-8 col-md-8 col-sm-6 col-12 pt-2">
+                            <div class="d-flex">
+                                <a href="meeting-room-today.html"
+                                    class="btn btn3 rounded-1 py-1 py-1 rounded-2 me-lg-2 me-md-1">Search</a>
+                                <a href="meeting-room-pick-date.html"
+                                    class="btn btn2 rounded-1 py-1 py-1 rounded-2 me-lg-2 me-md-1">Clear Search</a>
+                            </div>
+                        </div>
+                        <div
+                            class=" col-xxl-6 col-xl-3 col-lg-6 col-md-12 col-sm-6 col-12 pt-2 text-xxl-end text-lg-start">
+                            <div class="legend ms-3">
+                                <span class="me-2"> Download</span>
+                                <a href="meeting-room-pick-date.html"
+                                    class="btn btn4 rounded-1 py-1 py-1 rounded-2 me-lg-2 me-md-1">Export To Excel</a>
+                                <input type="date" name="" id="" class="py-1 px-2 rounded-1">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Room Card 1 -->
+                    <div class="row  my_booking_section conference_room_booking">
+                        <h5 class="mb-3">Conference Room Booking Details</h5>
+                        <div class="table-responsive nowrap_class">
+                            <table class="table table-striped table-hover">
+                                <thead class="table-primary">
+                                    <tr>
+                                        <th>Action</th>
+                                        <th>Sr. No</th>
+                                        <th>Visitor Photo</th>
+                                        <th>Visitor Info</th>
+                                        <th>Whom to Meet</th>
+                                        <th>Company</th>
+                                        <th>Purpose</th>
+                                        <th>Status</th>
+                                        <th>Passcode</th>
+                                        <th>Visitors Tag</th>
+                                        <th>Check-in</th>
+                                        <th>Check-out</th>
+                                        <th>Visit Type/Mode</th>
+                                        <th>Gadgets/Belongings</th>
+                                        <th>Duration</th>
+                                        <th>Scheduled Date & Time</th>
+                                        <th>E-Pass</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><button class="btn btn1 py-1 rounded-2">Save As</button></td>
+                                        <td>1</td>
+                                        <td><img src="images/visitor/visitor.png" alt="Visitor Photo" class="rounded">
+                                        </td>
+                                        <td>Kiran Mandey, 1234567890</td>
+                                        <td>23344 - Sachin Jadhav RST</td>
+                                        <td>Cybermarch</td>
+                                        <td>Vendor</td>
+                                        <td>In Premise</td>
+                                        <td>3008</td>
+                                        <td>1</td>
+                                        <td>wp-92</td>
+                                        <td><button class="btn btn4 py-1 rounded-2">Check out</button></td>
+                                        <td>Walk-In</td>
+                                        <td>Laptop/Mobile, Bill Book</td>
+                                        <td>00:01</td>
+                                        <td>2024/05/10 08:44</td>
+                                        <td>0684</td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="btn btn1 py-1 rounded-2">Save As</button></td>
+                                        <td>2</td>
+                                        <td><img src="images/visitor/visitor.png" alt="Visitor Photo" class="rounded">
+                                        </td>
+                                        <td>Sarthak Humake, 1234567890</td>
+                                        <td>23344 - Sachin Jadhav RST</td>
+                                        <td>Shire Enterprises</td>
+                                        <td>Vendor</td>
+                                        <td>Upcoming</td>
+                                        <td>3008</td>
+                                        <td>wp-92</td>
+                                        <td>2024/05/10 08:42</td>
+                                        <td><button class="btn btn4 py-1 rounded-2">Check out</button></td>
+                                        <td>Pre-Authorized</td>
+                                        <td>Mobile</td>
+                                        <td>00:03</td>
+                                        <td>2024/05/10 08:44</td>
+                                        <td>0684</td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="btn btn1 py-1 rounded-2">Save As</button></td>
+                                        <td>3</td>
+                                        <td><img src="images/visitor/visitor.png" alt="Visitor Photo" class="rounded">
+                                        </td>
+                                        <td>Sarthak Humake, 1234567890</td>
+                                        <td>23344 - Sachin Jadhav RST</td>
+                                        <td>Shire Enterprises</td>
+                                        <td>Vendor</td>
+                                        <td>Upcoming</td>
+                                        <td>3008</td>
+                                        <td>-</td>
+                                        <td>2024/05/10 08:50</td>
+                                        <td><button class="btn btn2 py-1 rounded-2">Check out</button></td>
+                                        <td>Pre-Authorized</td>
+                                        <td>Mobile</td>
+                                        <td>00:03</td>
+                                        <td>2024/05/10 08:44</td>
+                                        <td>0684</td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="btn btn1 py-1 rounded-2">Save As</button></td>
+                                        <td>4</td>
+                                        <td><img src="images/visitor/visitor.png" alt="Visitor Photo" class="rounded">
+                                        </td>
+                                        <td>Sarthak Humake, 1234567890</td>
+                                        <td>23344 - Sachin Jadhav RST</td>
+                                        <td>Shire Enterprises</td>
+                                        <td>Vendor</td>
+                                        <td>Upcoming</td>
+                                        <td>3008</td>
+                                        <td>-</td>
+                                        <td>2024/05/10 08:50</td>
+                                        <td><button class="btn btn4 py-1 rounded-2">Check out</button></td>
+                                        <td>Pre-Authorized</td>
+                                        <td>Laptop/Mobile</td>
+                                        <td>00:09</td>
+                                        <td>2024/05/10 08:44</td>
+                                        <td>0684</td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="btn btn1 py-1 rounded-2">Save As</button></td>
+                                        <td>5</td>
+                                        <td><img src="images/visitor/visitor.png" alt="Visitor Photo" class="rounded">
+                                        </td>
+                                        <td>Sarthak Humake, 1234567890</td>
+                                        <td>23344 - Sachin Jadhav RST</td>
+                                        <td>Shire Enterprises</td>
+                                        <td>Vendor</td>
+                                        <td>Upcoming</td>
+                                        <td>3008</td>
+                                        <td>-</td>
+                                        <td>2024/05/10 08:50</td>
+                                        <td><button class="btn btn4 py-1 rounded-2">Check out</button></td>
+                                        <td>Pre-Authorized</td>
+                                        <td>Mobile</td>
+                                        <td>00:02</td>
+                                        <td>2024/05/10 08:44</td>
+                                        <td>0684</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+
+
+
+        </div><!--main-->
+    </div><!--wrapper-->
+
+    <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

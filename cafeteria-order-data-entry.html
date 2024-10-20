@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/sidebar.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" rel="stylesheet">
+ 
 </head>
 
 <body data-theme="default" data-layout="fluid" data-sidebar-position="left" data-sidebar-behavior="sticky"
@@ -22,16 +23,18 @@
                     <img src="images/logo.svg" alt="">
                 </a>
                 <ul class="sidebar-nav">
-                    <li class="sidebar-item"><a class="sidebar-link active" href="cafeteria-management.html"><i
+                    <li class="sidebar-item"><a class="sidebar-link" href="cafeteria-management.html"><i
                                 class="border-0 bi bi-house-door h4"></i> Home </a>
                     </li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="cafeteria-menu.html"><i class="border-0 bi bi-menu-down h4"></i>
+                    <li class="sidebar-item"><a class="sidebar-link" href="cafeteria-menu.html"><i
+                                class="border-0 bi bi-menu-down h4"></i>
                             Menu </a>
                     </li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="cafeteria-my-booking.html"><i
+                    <li class="sidebar-item"><a class="sidebar-link " href=""><i
                                 class="border-0 bi bi-journal-check h4"></i> Booking </a>
                     </li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="cafeteria-my-cart.html"><i class="border-0 bi bi-cart h4"></i> My
+                    <li class="sidebar-item"><a class="sidebar-link active" href="cafeteria-my-cart.html"><i
+                                class="border-0 bi bi-cart h4"></i> My
                             Cart </a>
                     </li>
                     <li class="sidebar-item"><a class="sidebar-link" href=""><i class="border-0 bi bi-people h4"></i>
@@ -78,7 +81,8 @@
                         <a class="sidebar-toggle d-lg-none d-block">
                             <i class="bi bi-list align-self-center"></i>
                         </a>
-                        <a href="" class="fw-bold d-lg-block d-none">Cafeteria Management</a>
+                        <p class="fw-bold d-lg-block d-none">Cafeteria Management <a href="">/ Order Data Entry</a> </p>
+
                         <!-- <a class="navbar-brand" href="#">
               <img src="images/logo.svg" alt="" class="img-fluid w-75">
             </a> -->
@@ -115,62 +119,92 @@
                 </div>
             </header>
 
-            <section class="content flex-grow-0">
-
-                <div class="container p-3">
-                    <a href="" class="fw-bold text-center d-lg-none d-block">Cafeteria Management</a>
-                    <div class="row" style="height:400px;">
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-6 py-3">
-                            <a href="">
-                                <div class="cafeteria_cards text-center">
-                                    <img src="images/cafeteria-management/breakfast.svg" class="img-fluid" alt="">
-                                    <h5 class="pt-3">Breakfast</h5>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-6 py-3">
-                            <a href="">
-                                <div class="cafeteria_cards text-center">
-                                    <img src="images/cafeteria-management/lunch.svg" class="img-fluid" alt="">
-                                    <h5 class="pt-3">Lunch</h5>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-6 py-3">
-                            <a href="">
-                                <div class="cafeteria_cards text-center">
-                                    <img src="images/cafeteria-management/Evening-Snacks.svg" class="img-fluid" alt="">
-                                    <h5 class="pt-3">Evening Snacks</h5>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-6 py-3">
-                            <a href="">
-                                <div class="cafeteria_cards text-center">
-                                    <img src="images/cafeteria-management/Weekly-Menu-List.svg" class="img-fluid"
-                                        alt="">
-                                    <h5 class="pt-3">Weekly Menu List</h5>
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="">
+            <section class="content flex-grow-0 py-5 cafeteria_order_food_section ">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="text-center bg-white shadow-sm p-3 rounded-2 mb-5 mx-5">
-                                <a href="" class="fw-bolder">Click here for canteen guidlines</a>
+                    <div class="row justify-content-center">
+
+                        <div class="col-lg-11 col-md-12">
+                            <div class="container mt-5">
+                                <div class="custom-card p-4 shadow-sm">
+                                    <h3 class="form-title">Order Data Entry</h3>
+                                    <form action="#">
+                                        <div class="row mb-3">
+                                            <div class="col-md-6 d-xl-flex d-lg-block d-block px-lg-3 px-md-2 px-0 py-1">
+                                                <label for="date" class="form-label">Date</label>
+                                                <input type="date" class="form-control" id="date"
+                                                    placeholder="dd-mm-yy">
+                                            </div>
+                                            <div class="col-md-6 d-xl-flex d-lg-block d-block px-lg-3 px-md-2 px-0 py-1">
+                                                <label for="location" class="form-label">Location</label>
+                                                <select id="location" class="form-select custom-select">
+                                                    <option>Select Location</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-md-6 d-xl-flex d-lg-block d-block px-lg-3 px-md-2 px-0 py-1">
+                                                <label for="menu-list" class="form-label">Menu List</label>
+                                                <select id="department" class="form-select custom-select">
+                                                    <option>Select Menu</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6 d-xl-flex d-lg-block d-block px-lg-3 px-md-2 px-0 py-1">
+                                                <label for="employee" class="form-label">Employee</label>
+                                                <input type="text" class="form-control custom-input" id="employee"
+                                                    placeholder="Enter Name">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-11 my_booking_section py-5">
+                            <div class="table-responsive cafeteria_order_data_entry_section">
+                                <!-- Orders Table -->
+                                <table class="table table-striped table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>No.</th>
+                                            <th>Select</th>
+                                            <th>Item Name</th>
+                                            <th>Category</th>
+                                            <th>Selling Cost</th>
+                                            <th>Quantity</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                           <td><input type="checkbox" class="form-check-input"></td>
+                                            <td>Ragda Pattice</td>
+                                            <td>Veg Cooked</td>
+                                            <td>40.00</td>
+                                            <td><input type="text" class="form-control" value="1" min="1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                           <td><input type="checkbox" class="form-check-input"></td>
+                                            <td>Ragda Pattice</td>
+                                            <td>Veg Cooked</td>
+                                            <td>40.00</td>
+                                            <td><input type="text" class="form-control" value="2" min="1"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-lg-11">
+                            <div class="d-flex justify-content-center mt-2">
+                                <button type="submit" class="btn btn1 px-5 me-3">Save</button>
+                                <button type="button" class="btn btn2 px-5">Cancel</button>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </section>
+
+
 
 
 

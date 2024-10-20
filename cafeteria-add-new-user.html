@@ -40,8 +40,9 @@
                             Visitor Food Booking </a>
                     </li>
 
-                    <li class="sidebar-item"><a role="button" class="active sidebar-link collapsed" data-bs-target="#id-1"
-                            data-bs-toggle="collapse"><i class="border-0 bi bi-person h4"></i> Admin</a>
+                    <li class="sidebar-item"><a role="button" class="active sidebar-link collapsed"
+                            data-bs-target="#id-1" data-bs-toggle="collapse"><i class="border-0 bi bi-person h4"></i>
+                            Admin</a>
                         <ul id="id-1" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                             <li class="sidebar-item "><a class="sub_active sidebar-link" href=""><i class="align-middle"
                                         data-feather=""></i>View all menu</a></li>
@@ -80,7 +81,7 @@
                         <a class="sidebar-toggle d-lg-none d-block">
                             <i class="bi bi-list align-self-center"></i>
                         </a>
-                        <p class="fw-bold d-lg-block d-none">Cafeteria Management <a href="">/Add Food Item</a> </p>
+                        <p class="fw-bold d-lg-block d-none">Cafeteria Management <a href="">/Add New User</a> </p>
 
                         <!-- <a class="navbar-brand" href="#">
               <img src="images/logo.svg" alt="" class="img-fluid w-75">
@@ -122,100 +123,113 @@
                 <div class="container ">
                     <div class="row">
                         <form action="">
-                            <div class="col-xl-11 col-lg-12 col-md-12 form-container">
+                            <div class="col-xl-12 col-lg-12 col-md-12 form-container">
                                 <!-- Form Title -->
-                                <div class="form-title">Add Menu</div>
+                                <div class="form-title">Add New User</div>
 
                                 <!-- Cafeteria Name, Menu Name, Status -->
-                                <div class="row mb-3 ">
-                                    <div class="col-md-4 d-xl-flex d-lg-block d-block">
-                                        <label for="name" class="center_label form-label w-100"><span
+                                <div class="row mb-3  cafeteria_add_new-user_section ">
+                                    <div class="col-md-4 d-xl-flex d-lg-block d-block py-3">
+                                        <label for="name" class="center_label form-label"><span
                                                 class="text-danger">*</span>
-                                            Cafeteria
-                                            Name</label>
-                                        <select class="form-select custom-select">
-                                            <option selected>Praj - Sanaswadi</option>
-                                            <!-- Add more options as needed -->
-                                        </select>
+                                            First Name</label>
+                                        <input type="text" class="form-control custom-input" id="Category Name "
+                                            placeholder="First Name">
                                     </div>
-                                    <div class="col-md-4 d-xl-flex d-lg-block d-block">
+                                    <div class="col-md-4 d-xl-flex d-lg-block d-block py-3">
                                         <label class="form-label center_label w-75"><span class="text-danger">*</span>
-                                            Menu Name</label>
-                                        <select class="form-select custom-select">
-                                            <option selected>Lunch</option>
-                                            <!-- Add more options as needed -->
-                                        </select>
+                                            Last Name</label>
+
+                                        <input type="text" class="form-control custom-input" id="Category Name "
+                                            placeholder="Last Name">
                                     </div>
-                                    <div class="col-md-4 d-xl-flex d-lg-block d-block">
+                                    <div class="col-md-4 d-xl-flex d-lg-block d-block py-3">
                                         <label class="form-label center_label w-75"><span class="text-danger">*</span>
-                                            Menu
-                                            Status</label>
-                                        <select class="form-select custom-select">
-                                            <option selected>Active</option>
-                                            <!-- Add more options as needed -->
-                                        </select>
+                                            Employee Code</label>
+                                        <input type="text" class="form-control custom-input" id="Employee Code"
+                                            placeholder="Code">
+                                    </div>
+                                    <div class="col-md-4 d-xl-flex d-lg-block d-block py-3">
+                                        <label class="form-label center_label w-75"><span class="text-danger">*</span>
+                                            Email</label>
+                                        <input type="text" class="form-control custom-input" id="email "
+                                            placeholder="Enter Email">
+                                    </div>
+                                    <div class="col-md-4 d-xl-flex d-lg-block d-block py-3">
+                                        <label class="form-label center_label w-75"><span class="text-danger">*</span>
+                                           Mobile</label>
+                                        <input type="text" class="form-control custom-input" id="Mobile"
+                                            placeholder="Mobile">
+                                    </div>
+                                  
+                                    <div class="col-md-4 d-xl-flex d-lg-block d-block py-3">
+                                        <label class="form-label center_label w-75"><span class="text-danger">*</span>
+                                            Location</label>
+                                            <select id="location" class="form-select custom-select">
+                                                <option>Select Location</option>
+                                            </select>
+                                    </div>
+                                    <div class="col-md-4 d-xl-flex d-lg-block d-block py-3">
+                                        <label class="form-label center_label w-75"><span class="text-danger">*</span>
+                                            Department</label>
+                                            <select id="Department" class="form-select custom-select">
+                                                <option>Select Department</option>
+                                            </select>
+                                    </div>
+                                    <div class="col-md-4 d-xl-flex d-lg-block d-block py-3">
+                                        <label class="form-label center_label w-75"><span class="text-danger">*</span>
+                                            Employee Type</label>
+                                            <select id="Employee Type" class="form-select custom-select">
+                                                <option>Employee Type</option>
+                                            </select>
                                     </div>
                                 </div>
 
-                                <div class="form-section">
-                                    <div class="form-title">Availability Date & Time</div>
-                                    <!-- Availability Date & Time Section -->
-                                    <div class="row">
-                                        <div
-                                            class="px-xl-4  py-2 px-md-2 col-xl-2 col-lg-4 col-md-4  col-12 d_contents">
-                                            <label class="center_label"><span class="text-danger">*</span> Start
-                                                Date</label>
-                                        </div>
-                                        <div class="px-xl-4  py-2 px-md-2 col-xl-4 col-lg-4 col-md-4  col-12">
-                                            <input type="date" class="form-control">
-                                        </div>
-                                        <div
-                                            class="px-xl-4  py-2 px-md-2 col-xl-2 col-lg-4 col-md-4  col-12 d_contents">
-                                            <label class="center_label"><span class="text-danger">*</span> End
-                                                Date</label>
-                                        </div>
-                                        <div class="px-xl-4  py-2 px-md-2 col-xl-4 col-lg-4 col-md-4  col-12">
-                                            <input type="date" class="form-control">
-                                        </div>
-                                    </div>
 
-                                    <div class="row pt-3">
-                                        <div class="px-xl-4 py-2 px-md-2 col-xl-2 col-lg-4 col-md-4  col-12 d_contents">
-                                            <label class="center_label"><span class="text-danger">*</span> Start
-                                                Time</label>
-                                        </div>
-                                        <div class="px-xl-4  py-2 px-md-2 col-xl-2  col-xl-4 col-lg-4 col-md-4  col-12">
-                                            <select class="form-select time-select custom-select">
-                                                <option selected>1</option>
-                                                <option selected>2</option>
-                                                <option selected>3</option>
-                                                <option selected>7</option>
-                                                <!-- Add more options for hours -->
-                                            </select><span> h</span>
-                                            <select class="form-select time-select custom-select">
-                                                <option selected>00</option>
-                                                <!-- Add more options for minutes -->
-                                            </select> <span>min</span>
-                                        </div>
+                            </div>
 
-                                        <div class="px-xl-4  py-2 px-md-2 col-xl-2  d_contents">
-                                            <label class="center_label"><span class="text-danger">*</span> End
-                                                Time</label>
-                                        </div>
-                                        <div class="px-xl-4  py-2 px-md-2 col-xl-4 col-lg-4 col-md-4  col-12">
-                                            <select class="form-select time-select custom-select">
-                                                <option selected>7</option>
-                                                <!-- Add more options for hours -->
-                                            </select> <span>h</span>
-                                            <select class="form-select time-select custom-select">
-                                                <option selected>00</option>
-                                                <!-- Add more options for minutes -->
-                                            </select> <span>min</span>
-                                        </div>
-
-
-                                    </div>
-
+                            <div class="col-lg-12 my_booking_section">
+                                <div class="table-responsive">
+                                    <!-- Orders Table -->
+                                    <table class="table table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Id</th>
+                                                <th>Name</th>
+                                                <th>Employee code</th>
+                                                <th>Email</th>
+                                                <th>Mobile</th>
+                                                <th>Location</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>567890</td>
+                                                <td>Kartek Amborey</td>
+                                                <td>HK</td>
+                                                <td>@gmail.com</td>
+                                                <td>1234567890</td>
+                                                <td>Praj (Hinjewadi)</td>
+                                                <td>
+                                                    <button class="btn btn4 mb-1">Edit</button>
+                                                    <button class="btn btn2 mb-1">Deactivate</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>567890</td>
+                                                <td>Saurabh Adhagale</td>
+                                                <td>HK</td>
+                                                <td>@gmail.com</td>
+                                                <td>1234567890</td>
+                                                <td>Praj (Sanaswadi)</td>
+                                                <td>
+                                                    <button class="btn btn4 mb-1">Edit</button>
+                                                    <button class="btn btn2 mb-1">Deactivate</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                             <div class="d-flex justify-content-center mt-4 mb-5">

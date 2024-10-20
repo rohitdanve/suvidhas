@@ -47,28 +47,30 @@
                             Visitor Food Booking </a>
                     </li>
 
-                    <li class="sidebar-item"><a role="button" class="active sidebar-link collapsed" data-bs-target="#id-1"
-                        data-bs-toggle="collapse"><i class="border-0 bi bi-person h4"></i> Admin</a>
-                    <ul id="id-1" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                        <li class="sidebar-item "><a class=" sub_active sidebar-link" href="cafeteria-view-all-menu.html"><i class="align-middle"
-                                    data-feather=""></i>View all menu</a></li>
-                        <li class="sidebar-item"><a class="sidebar-link" href=""><i class="align-middle"
-                                    data-feather=""></i> View all orders</a></li>
-                        <li class="sidebar-item"><a class="sidebar-link" href=""><i class="align-middle"
-                                    data-feather=""></i> Add food item</a></li>
-                        <li class="sidebar-item"><a class="sidebar-link" href=""><i class="align-middle"
-                                    data-feather=""></i> Category master</a></li>
-                        <li class="sidebar-item"><a class="sidebar-link" href=""><i class="align-middle"
-                                    data-feather=""></i>Location matser</a></li>
-                        <li class="sidebar-item"><a class="sidebar-link" href=""><i class="align-middle"
-                                    data-feather=""></i>Order data entry</a></li>
-                        <li class="sidebar-item"><a class="sidebar-link" href=""><i class="align-middle"
-                                    data-feather=""></i>User Master</a></li>
-                        <li class="sidebar-item"><a class="sidebar-link" href=""><i class="align-middle"
-                                    data-feather=""></i>Visitor data entry</a></li>
+                    <li class="sidebar-item"><a role="button" class="active sidebar-link collapsed"
+                            data-bs-target="#id-1" data-bs-toggle="collapse"><i class="border-0 bi bi-person h4"></i>
+                            Admin</a>
+                        <ul id="id-1" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item "><a class="sidebar-link" href="cafeteria-view-all-menu.html"><i
+                                        class="align-middle" data-feather=""></i>View all menu</a></li>
+                            <li class="sidebar-item"><a class="sub_active sidebar-link"
+                                    href="cafeteria-view-all-order.html"><i class="align-middle" data-feather=""></i>
+                                    View all orders</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href=""><i class="align-middle"
+                                        data-feather=""></i> Add food item</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href=""><i class="align-middle"
+                                        data-feather=""></i> Category master</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href=""><i class="align-middle"
+                                        data-feather=""></i>Location matser</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href=""><i class="align-middle"
+                                        data-feather=""></i>Order data entry</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href=""><i class="align-middle"
+                                        data-feather=""></i>User Master</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href=""><i class="align-middle"
+                                        data-feather=""></i>Visitor data entry</a></li>
 
-                    </ul>
-                </li>
+                        </ul>
+                    </li>
                     <li class="sidebar-item"><a role="button" class="sidebar-link collapsed" data-bs-target="#id-2"
                             data-bs-toggle="collapse"><i class="border-0 bi bi-journal-richtext h4"></i> Report</a>
                         <ul id="id-2" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
@@ -124,69 +126,64 @@
                     </nav>
                 </div>
             </header>
-
-            <section class="content flex-grow-0 my_booking_section">
+            <section class="content">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-5 col-md-12 col-12">
-                            <!-- Filter section with labels -->
-                            <form class="d-flex">
-                                <input class="form-control me-2" type="search" placeholder="Search for menu" aria-label="Search">
-                                <button class="btn btn3 rounded-1" type="submit">Search</button>
-                              </form>
-                        </div>
-                        <div class="col-lg-12 pt-3">
-                            <div class="table-responsive">
+                        <div class="col-lg-12 my_booking_section py-5 px-0">
+                            <div class="table-responsive ">
                                 <!-- Orders Table -->
                                 <table class="table table-striped table-hover">
                                     <thead>
                                         <tr>
                                             <th>Sr. No</th>
+                                            <th>Order Id</th>
                                             <th>Location</th>
-                                            <th>Menu Name</th>
-                                            <th>Start Date</th>
-                                            <th>End Time</th>
+                                            <th>Employee Name</th>
+                                            <th>Email</th>
+                                            <th>Order Date</th>
+                                            <th>Quantity</th>
+                                            <th>Amount</th>
+                                            <th>Order Status</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>1</td>
+                                            <td>PT_0031848</td>
                                             <td>Praj Tower (Hinjewadi)</td>
-                                            <td>Lunch</td>
-                                            <td>15/05/24</td>
+                                            <td>Santosh Jaybhange</td>
+                                            <td>santoshjaybhange@praj.net</td>
+                                            <td>15/05/24 8:37:58 AM</td>
+                                            <td>1</td>
+                                            <td>25.00</td>
                                             <td>Active</td>
                                             <td>
-                                                <button class="btn py-1 rounded-2 fs-6 btn1">Clone</button>
-                                                <button class="btn py-1 rounded-2 fs-6 btn2">Edit</button>
-                                                <button class="btn py-1 rounded-2 fs-6 btn1">Tag Item</button>
+                                                <div class="action-buttons">
+                                                    <button
+                                                        class="btn py-1 rounded-2 fs-6 w-100  btn1 mb-1">Deliver</button>
+                                                    <button class="btn py-1 rounded-2 fs-6 w-100  btn4">View</button>
+                                                </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
+                                            <td>PT_0031848</td>
                                             <td>Praj Tower (Hinjewadi)</td>
-                                            <td>Lunch</td>
-                                            <td>15/05/24</td>
+                                            <td>Santosh Jaybhange</td>
+                                            <td>santoshjaybhange@praj.net</td>
+                                            <td>15/05/24 8:37:58 AM</td>
+                                            <td>1</td>
+                                            <td>25.00</td>
                                             <td>Active</td>
                                             <td>
-                                                <button class="btn py-1 rounded-2 fs-6 btn1">Clone</button>
-                                                <button class="btn py-1 rounded-2 fs-6 btn2">Edit</button>
-                                                <button class="btn py-1 rounded-2 fs-6 btn1">Tag Item</button>
+                                                <div class="action-buttons">
+                                                    <button
+                                                        class="btn py-1 rounded-2 fs-6 w-100  btn1 mb-1">Deliver</button>
+                                                    <button class="btn py-1 rounded-2 fs-6 w-100  btn4">View</button>
+                                                </div>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Praj Tower (Hinjewadi)</td>
-                                            <td>Lunch</td>
-                                            <td>15/05/24</td>
-                                            <td>Active</td>
-                                            <td>
-                                                <button class="btn py-1 rounded-2 fs-6 btn1">Clone</button>
-                                                <button class="btn py-1 rounded-2 fs-6 btn2">Edit</button>
-                                                <button class="btn py-1 rounded-2 fs-6 btn1">Tag Item</button>
-                                            </td>
-                                        </tr>
-                                        <!-- Add more rows as needed -->
                                     </tbody>
                                 </table>
                             </div>
@@ -196,9 +193,6 @@
                 </div>
 
             </section>
-
-
-
 
 
         </div><!--main-->

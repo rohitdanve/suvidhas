@@ -2,14 +2,15 @@
     --primary-color: #F15A22;
     --secondary-color: #00529C;
     --btn1-color: #F15A22;
-    --btn1-hover: #00529C;   
+    --btn1-hover: #00529C;
     --btn2-color: #5F5F5F;
     --btn2-hover: #313131;
-    --btn3-color:#037E00;
+    --btn3-color: #037E00;
     --btn3-hover: #313131;
+    --btn4-color: #2F71E0;
+    --btn4-hover: #313131;
     --font-size: 16px;
     --a-hover: #F15A22;
-    
 }
 
 * {
@@ -37,7 +38,7 @@ a {
     background: var(--btn1-color);
     color: #ffffff;
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     border-radius: 16px;
 }
@@ -51,7 +52,7 @@ a {
     background: var(--btn2-color);
     color: #ffffff;
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     border-radius: 16px;
 }
@@ -60,6 +61,46 @@ a {
     background: var(--btn2-hover);
     color: #ffffff;
 }
+
+.btn3 {
+    background: var(--btn3-color);
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 16px;
+}
+
+.btn3:hover {
+    background: var(--btn3-hover);
+    color: #ffffff;
+}
+
+.btn4 {
+    background: var(--btn4-color);
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 16px;
+}
+
+.btn4:hover {
+    background: var(--btn4-hover);
+    color: #ffffff;
+}
+
+/* ============================================= */
+.table-responsive {
+    border: 2px solid #bfbfbf;
+    padding: 0;
+    border-radius: 11px;
+}
+
+.table.table-hover {
+    margin: 0;
+}
+
 
 /* ==============Login page================ */
 
@@ -431,14 +472,14 @@ td {
     font-weight: bold;
 }
 
-.my_booking_section  input[type="date"] {
+.my_booking_section input[type="date"] {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 8px;
     width: 200px;
 }
 
-.my_booking_section  .search-button{
+.my_booking_section .search-button {
     padding: 12px 24px;
     background-color: var(--btn3-color);
     border: none;
@@ -453,13 +494,13 @@ td {
     background-color: var(--btn3-hover)
 }
 
-.my_booking_section   table {
+.my_booking_section table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
-.my_booking_section  th,
+.my_booking_section th,
 .my_booking_section td {
     text-align: center;
     padding: 12px;
@@ -472,7 +513,7 @@ td {
     border: unset;
 }
 
-.my_booking_section  td {
+.my_booking_section td {
     background-color: #fff;
     border: unset;
 }
@@ -501,11 +542,11 @@ td {
 }
 
 /* Rounded corners for the table */
-.my_booking_section  th:first-child {
+.my_booking_section th:first-child {
     border-top-left-radius: 10px;
 }
 
-.my_booking_section  th:last-child {
+.my_booking_section th:last-child {
     border-top-right-radius: 10px;
 }
 
@@ -526,7 +567,8 @@ td {
     width: auto;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     position: relative;
-    overflow: hidden; /* Ensure that cutouts stay inside the card */
+    overflow: hidden;
+    /* Ensure that cutouts stay inside the card */
     border: 0px;
 }
 
@@ -556,11 +598,12 @@ td {
     margin-bottom: 10px;
 }
 
-.my_cart_section thead tr{
+.my_cart_section thead tr {
     border-bottom: 2px solid #dcd8d8;
 }
 
-.my_cart_section th, .my_cart_section td {
+.my_cart_section th,
+.my_cart_section td {
     padding: 12px;
     text-align: left;
     border-bottom: 1px solid #f1f1f1;
@@ -632,7 +675,8 @@ td {
     color: red;
 }
 
-.my_cart_section .card::before, .my_cart_section .card::after {
+.my_cart_section .card::before,
+.my_cart_section .card::after {
     content: '';
     position: absolute;
     bottom: 68px;
@@ -658,7 +702,7 @@ td {
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    
+
 }
 
 .cafeteria_order_food_section .form-title {
@@ -680,7 +724,7 @@ td {
     background-color: #f0f2f5;
     border: 1px solid #d1d3d6;
     border-radius: 10px;
-    padding: 8px;
+    padding: .375rem 2.25rem .375rem .75rem;
     height: 38px;
     color: #9b9b9b;
     font-size: 14px;
@@ -731,11 +775,12 @@ td {
 
 /* ===================cafeteria_add_menu========================= */
 
-.cafeteria_add_menu  .form-container {
+.cafeteria_add_menu .form-container {
     margin: 50px auto;
+    margin-bottom: 20px;
     background-color: #fff;
     border-radius: 8px;
-    padding: 30px;
+    padding: 50px 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -746,7 +791,7 @@ td {
 }
 
 .cafeteria_add_menu .time-select {
-    width: auto;
+    width: 37%;
     display: inline-block;
 }
 
@@ -760,12 +805,277 @@ td {
     display: contents;
 }
 
+
+/* =================Add food item================== */
+
+.cafeteria_add_food_item_section .form-label {
+    font-weight: 500;
+    color: #000;
+    width: 50%;
+}
+
+.cafeteria_add_food_item_section input[type="file"] {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.cafeteria_add_food_item_section .custom-input {
+    width: 90%;
+}
+
+.cafeteria_add_new-user_section .center_label {
+    width: 75%;
+    justify-content: start;
+}
+
+/* =================Order Data Entry================== */
+
+.cafeteria_order_data_entry_section table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.cafeteria_order_data_entry_section th,
+.cafeteria_order_data_entry_section td {
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* ===========================Meeting - Room=================================== */
+.meeting_room .room-card {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #fff;
+}
+
+.meeting_room .room-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.meeting_room .time-slot-box {
+    margin-top: 15px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+}
+
+.meeting_room .time-slot {
+    width: 70px;
+    height: 30px;
+    background-color: #CAC9C9;
+    margin: 0 8px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.meeting_room .booked {
+    background-color: #CAC9C9;
+}
+
+.meeting_room .vacant {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.meeting_room .legend {
+    font-weight: bold;
+    color: #6c757d;
+}
+
+.meeting_room .toolbar {
+    margin-bottom: 20px;
+}
+
+
+
+.meeting_room h5 {
+    color: #1C326C;
+}
+
+.meeting_room .time_left {
+    background: rgb(31, 37, 205);
+    background: linear-gradient(90deg, #00529C 49%, #CAC9C9 49%);
+}
+
+.meeting_room .time_right {
+    background: rgb(31, 37, 205);
+    background: linear-gradient(90deg, #CAC9C9 49%, #00529C 49%);
+}
+
+.meeting_room .card_text_center {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 17px 0;
+}
+
+.meeting_room h5 span {
+    color: var(--primary-color);
+}
+
+.meeting_room p {
+    color: #000000;
+    margin: 10px 0;
+}
+
+.align_items_center {
+    align-items: center;
+}
+
+/* ====================room booing entry============================ */
+.meeting_room_booking_entry .form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+
+}
+
+.meeting_room_booking_entry .info-box {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20%;
+}
+
+.meeting_room_booking_entry .info-box h6 {
+    font-weight: bold;
+    color: #002E6E;
+}
+
+.meeting_room_booking_entry .info-box p {
+    color: #002E6E;
+}
+
+.meeting_room_booking_entry .btn-save {
+    background-color: #fd7e14;
+    color: white;
+    border: none;
+}
+
+.meeting_room_booking_entry .btn-cancel {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+}
+
+.meeting_room_booking_entry .required::before {
+    content: " *";
+    color: red;
+}
+
+.meeting_room_booking_entry .custom-input {
+    background-color: #f0f0f0;
+    border: none;
+}
+
+/* ============conference_room_booking=============== */
+.conference_room_booking .form-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.conference_room_booking .table-group-divider {
+    border: 0;
+}
+
+.conference_room_booking .custom-input {
+    background-color: #f0f0f0;
+    border: none;
+}
+
+.conference_room_booking .grey_row td {
+    background-color: #858585;
+    color: #ffffff !important;
+}
+
+.conference_room_booking .grey_row {
+    border: 0 !important;
+}
+
+.conference_room_booking td:first-child {
+    border-bottom-left-radius: unset;
+}
+
+.conference_room_booking td:last-child {
+    border-bottom-right-radius: unset;
+}
+
+/* ===================Popup modal========================== */
+.modal-content {
+    border-radius: 15px;
+}
+
+.modal-body p {
+    color: #002E6E;
+}
+
+.modal-body {
+    font-size: 14px;
+}
+
+.modal-body strong {
+    color: #002E6E;
+    /* Floor text color */
+}
+
+.close-btn {
+    --bs-btn-close-bg: unset;
+}
+
+
+.btn-close {
+    /* width: 1em; */
+    height: unset;
+    padding: .25em .25em;
+    color: var(--bs-btn-close-color);
+    background: transparent var(--bs-btn-close-bg) center / 1em auto no-repeat;
+    border: 0;
+    border-radius: .375rem;
+    opacity: var(--bs-btn-close-opacity);
+
+}
+
+/* =================================================== */
+
+.nowrap_class table tr,
+.nowrap_class  table td {
+    font-size: 16px;
+    text-wrap: nowrap;
+}
+
+
 @media (min-width:1440px) {
     body[data-layout=boxed] .wrapper {
         width: 90vw
     }
+
+    .cafeteria_add_menu .center_label,
+    .cafeteria_add_menu span {
+        font-size: 14px;
+    }
 }
 
+@media(max-width:1900px) {
+
+    .cafeteria_add_menu .center_label,
+    .cafeteria_add_menu span {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
 
 @media(max-width:1300px) {
 
@@ -782,26 +1092,73 @@ td {
     .cafeteria_cards h5 {
         font-size: 16px;
     }
-    .cafeteria_order_food_section .form-label{
+
+    .cafeteria_order_food_section .form-label {
         font-size: 0.8rem;
-        width: 100%;
+        width: 50%;
+        justify-content: flex-start;
     }
+
     .cafeteria_order_food_section .form-check-label {
         font-weight: 500;
         color: #4f4f4f;
         font-size: 14px;
     }
-    
+
     .cafeteria_order_food_section .custom-input {
         padding: 10px;
         height: 35px;
         font-size: 14px;
         font-weight: 500;
+        padding: .375rem 2.25rem .375rem .75rem;
     }
+
     .navbar-expand .navbar-nav {
         flex-direction: column;
     }
-  
+
+    .cafeteria_add_menu .center_label,
+    .cafeteria_add_menu span {
+        font-size: 14px;
+    }
+
+    .cafeteria_add_food_item_section .form-label {
+        font-size: 0.8rem;
+        width: 50%;
+        justify-content: flex-start;
+    }
+
+    .cafeteria_add_food_item_section .custom-select,
+    .cafeteria_add_food_item_section .custom-input {
+        border: 1px solid #d1d3d6;
+        border-radius: 6px;
+        height: 30px;
+        color: #9b9b9b;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    table tr,
+    td {
+        font-size: 14px;
+        text-wrap: nowrap;
+    }
+
+    .meeting_room .filter_section {
+        background: #fff;
+        padding: 10px 10px;
+        border-radius: 15px;
+    }
+
+    .meeting_room_booking_entry .form-label {
+        font-size: 14px;
+    }
+
+    .meeting_room_booking_entry .custom-input {
+        background-color: #f0f0f0;
+        border: none;
+        font-size: 12px;
+    }
 }
 
 @media(max-width:991px) {
@@ -818,11 +1175,13 @@ td {
         position: unset;
     }
 
-    .login_section  input[type],
-    .form-select,
+    .login_section input[type],
+    .login_section .form-select,
     .btn {
         padding: 8px 20px;
         border-radius: 16px;
+        border: none;
+        font-size: 12px;
     }
 
     .login_section p {
@@ -842,20 +1201,54 @@ td {
         width: 114px;
     }
 
-  
+
     .cafeteria_order_food_section .form-check-label {
         font-size: 12px;
     }
-    
+
     .cafeteria_order_food_section .custom-input {
         font-size: 12px;
     }
 
     .cafeteria_add_menu .time-select {
-        width: 30%;
+        width: 36%;
+    }
+
+    .cafeteria_add_food_item_section .custom-input {
+        width: 100%;
+    }
+
+    table tr,
+    td {
+        font-size: 12px;
+        text-wrap: nowrap;
+    }
+
+    .meeting_room .filter_section {
+        background: #fff;
+        padding: 10px 10px;
+        border-radius: 15px;
+    }
+
+    .meeting_room .btn {
+        font-size: 14px;
     }
 
 }
+
+
+@media (max-width: 768px) {
+    .meeting_room .time-slot {
+        width: 60px;
+        font-size: 12px;
+    }
+
+    .meeting_room .btn-book-now {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
 
 @media (max-width: 767.98px) {
     .main {
@@ -879,12 +1272,44 @@ td {
         font-size: 16px;
     }
 
-    
+
     .navbar-expand .navbar-nav {
         flex-direction: row;
     }
+
     .black_arrow:after {
         border-bottom: solid #000000 !important;
         border-right: solid #000000 !important;
+    }
+
+    .cafeteria_order_data_entry_section table {
+        table-layout: unset;
+        width: unset;
+    }
+
+    .meeting_room .align_items_center {
+        align-items: normal;
+    }
+
+
+}
+
+
+
+
+@media (max-width: 576px) {
+    .meeting_room .toolbar {
+        flex-direction: column;
+    }
+
+    .meeting_room .toolbar select,
+    .meeting_room .toolbar input,
+    .meeting_room .toolbar .meeting_room .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .meeting_room .room-card img {
+        width: 100%;
     }
 }
