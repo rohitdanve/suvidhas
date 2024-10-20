@@ -26,12 +26,10 @@
                     <li class="sidebar-item"><a class="sidebar-link" href="landing-screen.html"><i
                                 class="border-0 bi bi-house-door h4"></i> Home </a>
                     </li>
-                    <li class="sidebar-item"><a class="sidebar-link " href=""><i
-                                class="border-0 bi bi-journal-check h4"></i> Invite Visitor</a>
+                    <li class="sidebar-item"><a class="sidebar-link active" href=""><i
+                                class="border-0 bi bi-journal-check h4"></i> Booking Details</a>
                     </li>
-                    <li class="sidebar-item"><a class="sidebar-link active" href="cafeteria-my-cart.html"><i
-                                class="border-0 bi bi-cart h4"></i> Security Gate Dashboard </a>
-                    </li>
+                   
 
 
 
@@ -43,9 +41,10 @@
                 <div class="container">
                     <nav class="navbar navbar-expand navbar-light navbar-bg">
                         <a class="sidebar-toggle d-lg-none d-block">
-                            <i class="bi bi-list align-self-center"></i>
+                            <i class="bi hide bi-list align-self-center"></i>
+                            
                         </a>
-                        <p class="fw-bold d-lg-block d-none"><a href=""> Visitors Details </a> </p>
+                        <p class="fw-bold d-lg-block d-none">Visitors Management<a href=""> / Invited Visitors </a> </p>
 
                         <!-- <a class="navbar-brand" href="#">
               <img src="images/logo.svg" alt="" class="img-fluid w-75">
@@ -89,15 +88,15 @@
                         <!-- Form Section -->
                         <div class="col-xl-10  form-container">
                             <div class="">
-                                <h5 style="color: #1C326C;">Invites Details</h5>
+                                <h5 style="color: #1C326C;">Vehicle Booking Entry Form</h5>
                                 <form>
                                     <!-- Meeting Room -->
                                     <div class="row py-2">
                                         <div class="col-xl-4 col-lg-12 col-md-12 col-12">
-                                            <label class="form-label required"> Visitors Contact Number</label>
+                                            <label class="form-label required">Self/On Behalf of Name</label>
                                         </div>
                                         <div class="col-xl-8 col-lg-12 col-md-12 col-12">
-                                            <input type="text" class="form-control custom-input" placeholder="+91">
+                                            <input type="text" class="form-control custom-input" placeholder="12346789">
 
                                         </div>
                                     </div>
@@ -106,82 +105,42 @@
                                     <!-- Name Input -->
                                     <div class="row py-2">
                                         <div class="col-xl-4 col-lg-12 col-md-12 col-12">
-                                            <label class="form-label required"> Visitors Name</label>
+                                            <label class="form-label required"> Travel Route</label>
                                         </div>
                                         <div class="col-xl-8 col-lg-12 col-md-12 col-12">
                                             <input type="text" class="form-control custom-input"
                                                 placeholder="Enter Name">
-                                            <div class="d-flex py-2">
-                                                <button type="button" class="btn py-1 rounded-3  btn4 me-2">Send
-                                                    Password</button>
-                                                <button type="button" class="btn py-1 rounded-3 btn1">Resend
-                                                    Password</button>
-                                            </div>
                                         </div>
                                     </div>
 
-                                    <div class="row py-2">
-                                        <div class="col-xl-4 col-lg-12 col-md-12 col-12">
-                                            <label class="form-label required"> Enter Password</label>
-                                        </div>
-                                        <div class="col-xl-8 col-lg-12 col-md-12 col-12">
-                                            <input type="password" class="form-control" id="password" placeholder="0684"
-                                                disabled>
-                                            <div class="d-flex py-2">
-                                                <button type="button"
-                                                    class="btn btn3 rounded-2 py-1 me-2">Verify</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row py-2">
-                                        <div class="col-xl-4 col-lg-12 col-md-12 col-12">
-                                            <label class="form-label required"> Visitors Company/Coming from</label>
-                                        </div>
-                                        <div class="col-xl-8 col-lg-12 col-md-12 col-12">
-                                            <input type="text" class="form-control custom-input"
-                                                placeholder="Company Name">
-                                        </div>
-                                    </div>
+                                    <!-- Meet Location -->
 
                                     <div class="row py-2">
                                         <div class="col-xl-4 col-lg-12 col-md-12 col-12">
-                                            <label class="form-label required"> Visitors Pass Number</label>
+                                            <label class="form-label required"> Location</label>
                                         </div>
                                         <div class="col-xl-8 col-lg-12 col-md-12 col-12">
-                                            <input type="text" class="form-control custom-input"
-                                                placeholder="Pass Number">
+                                            <select class="form-select custom-input">
+                                                <option> select Location</option>
+                                            </select>
                                         </div>
                                     </div>
 
+
                                     <div class="row py-2">
                                         <div class="col-xl-4 col-lg-12 col-md-12 col-12">
-                                            <label class="form-label required"> Gadgets</label>
+                                            <label class="form-label required"> Billing To
+                                            </label>
                                         </div>
                                         <div class="col-xl-8 col-lg-12 col-md-12 col-12">
                                             <div class="row">
-                                                <div class="col-4">
+                                                <div class="col-md-3 ">
                                                     <input type="checkbox" class="" id="laptop">
-                                                    <label class="form-check-label" for="laptop">Laptop</label>
+                                                    <label class="form-check-label" for="laptop">Department</label>
                                                 </div>
-                                                <div class="col-4">
+                                                <div class="col-md-3 ">
                                                     <input type="checkbox" class="" id="penDrive">
-                                                    <label class="form-check-label" for="penDrive">Pen Drive</label>
-                                                </div>
-                                                <div class="col-4">
-                                                    <input type="checkbox" class="" id="hardDisk">
-                                                    <label class="form-check-label" for="hardDisk">Hard Disk</label>
-                                                </div>
-                                                <div class="col-4">
-                                                    <input type="checkbox" class="" id="powerBank">
-                                                    <label class="form-check-label" for="powerBank">Power Bank</label>
-                                                </div>
-                                                <div class="col-4">
-                                                    <input type="checkbox" class="" id="mobile">
-                                                    <label class="form-check-label" for="mobile">Mobile</label>
-                                                </div>
-                                                <div class="col-4">
-                                                    <input type="checkbox" class="" id="other">
-                                                    <label class="form-check-label" for="other">Other</label>
+                                                    <label class="form-check-label" for="penDrive">Project</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -191,69 +150,113 @@
 
                                     <div class="row py-2">
                                         <div class="col-xl-4 col-lg-12 col-md-12 col-12">
-                                            <label class="form-label ">Camera Feed</label>
+                                            <label class="form-label required"> Department</label>
                                         </div>
                                         <div class="col-xl-8 col-lg-12 col-md-12 col-12">
-                                            <img src="images/visitor/visitor-details.png" alt="" srcset="">
+                                            <select class="form-select custom-input">
+                                                <option> RSAT</option>
+                                            </select>
                                         </div>
                                     </div>
+
+                                    <div class="row py-2">
+                                        <div class="col-xl-4 col-lg-12 col-md-12 col-12">
+                                            <label class="form-label required"> Pin Code</label>
+                                        </div>
+                                        <div class="col-xl-8 col-lg-12 col-md-12 col-12">
+                                            <input type="text" class="form-control custom-input" placeholder="">
+                                        </div>
+                                    </div>
+                                    <!-- First Pickup Location Address -->
+                                    <div class="row py-2">
+                                        <div class="col-xl-4 col-lg-12 col-md-12 col-12">
+                                            <label class="form-label required"> First Pickup Location Address</label>
+                                        </div>
+                                        <div class="col-xl-8 col-lg-12 col-md-12 col-12">
+                                            <textarea type="text" class="form-control custom-input"
+                                                placeholder="Location Address"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <!-- Department -->
+                                    <div class="row py-2">
+                                        <div class="col-xl-4 col-lg-12 col-md-12 col-12">
+                                            <label class="form-label required"> Co Travellers
+                                            </label>
+                                        </div>
+                                        <div class="col-xl-8 col-lg-12 col-md-12 col-12">
+                                            <input type="text" class="form-control custom-input my-1">
+                                            <input type="text" class="form-control custom-input my-1">
+                                            <input type="text" class="form-control custom-input my-1">
+                                        </div>
+                                    </div>
+
+                                    <div class="row py-2">
+                                        <div class="col-xl-4 col-lg-12 col-md-12 col-12">
+                                            <label class="form-label required"> Trip 
+                                            </label>
+                                        </div>
+                                        <div class="col-xl-8 col-lg-12 col-md-12 col-12">
+                                            <div class="row">
+                                                <div class="col-md-3 ">
+                                                    <input type="checkbox" class="" id="laptop">
+                                                    <label class="form-check-label" for="laptop">One Way </label>
+                                                </div>
+                                                <div class="col-md-3 ">
+                                                    <input type="checkbox" class="" id="penDrive">
+                                                    <label class="form-check-label" for="penDrive">Round Trip</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Meeting  date and Time -->
+
+                                    <div class="row py-2">
+                                        <div class="col-xl-4 col-lg-12 col-md-12 col-12">
+                                            <label class="form-label required">Pickup & Return Date and Time</label>
+                                        </div>
+                                        <div class="col-xl-8 col-lg-12 col-md-12 col-12">
+                                            <div class="d-flex py-2">
+                                                <input type="date" class="form-control me-2 custom-input">
+                                                <select class="form-select custom-input me-2">
+                                                    <option>7 AM</option>
+                                                </select>
+                                                <select class="form-select custom-input me-2">
+                                                    <option>00</option>
+                                                </select>
+                                               
+                                               
+                                            </div>
+
+                                            <div class="d-flex py-2">
+                                                <input type="date" class="form-control me-2 custom-input">
+                                                <select class="form-select custom-input me-2">
+                                                    <option>3 Am</option>
+                                                </select>
+                                                <select class="form-select custom-input me-2">
+                                                    <option>00</option>
+                                                </select>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
                                 </form>
                             </div>
                         </div>
 
-                        <div class="col-xl-10  form-container mt-3">
-                            <h5 style="color: #1C326C;">Hotel Details</h5>
-                            <div class="row py-2">
-                                <div class="col-xl-4 col-lg-12 col-md-12 col-12">
-                                    <label class="form-label required"> Visitors Pass Number</label>
-                                </div>
-                                <div class="col-xl-8 col-lg-12 col-md-12 col-12">
-                                    <select class="form-select custom-input" id="meetLocation" required>
-                                        <option selected disabled>Meet Location</option>
-                                        <option value="option1">Option 1</option>
-                                        <option value="option2">Option 2</option>
-                                        <option value="option3">Option 3</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row py-2">
-                                <div class="col-xl-4 col-lg-12 col-md-12 col-12">
-                                    <label class="form-label required">Visit Purpose</label>
-                                </div>
-                                <div class="col-xl-8 col-lg-12 col-md-12 col-12">
-                                    <select class="form-select custom-input" id="meetLocation" required>
-                                        <option selected disabled>Select Purpose</option>
-                                        <option value="option1">Option 1</option>
-                                        <option value="option2">Option 2</option>
-                                        <option value="option3">Option 3</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row py-2">
-                                <div class="col-xl-4 col-lg-12 col-md-12 col-12">
-                                    <label class="form-label required">Whom To Meet</label>
-                                </div>
-                                <div class="col-xl-8 col-lg-12 col-md-12 col-12">
-                                    <select class="form-select custom-input" id="meetLocation" required>
-                                        <option selected disabled>Select </option>
-                                        <option value="option1">Option 1</option>
-                                        <option value="option2">Option 2</option>
-                                        <option value="option3">Option 3</option>
-                                    </select>
-                                </div>
-                            </div>
+                        <div class="text-center py-4">
+                            <button type="submit" class="btn btn2 py-2 rounded-1">Go Back</button>
                         </div>
 
-
-                        <div class="row">
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-12 justify-content-center d-flex pt-4">
-
-                                <div class="d-flex gap-3">
-                                    <button type="submit" class="btn btn1 py-1 px-5 rounded-1 ">Check In </button>
-                                    <button type="button" class="btn btn2 py-1 px-5 rounded-1 ">backup</button>
-                                </div>
-                            </div>
-                        </div>
 
                     </div>
                 </div>
