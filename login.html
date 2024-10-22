@@ -10,11 +10,10 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
-     <section class="login_section">
+    <section class="login_section">
         <div class="container-fluid ">
             <div class="row login-container">
                 <!-- Left Side: Image -->
@@ -32,31 +31,36 @@
 
                         <div class="login-form">
 
-                            <h3 class="text-center mb-4"><img src="images/suvidha.svg" class="img-fluid"
+                            <h3 class="text-center mb-4">Welcome to <br><img src="images/suvidha.svg" class="img-fluid"
                                     alt="" srcset=""></h3>
-                                    <form>
-                                        <h5 class="py-3">Forgot Password?</h5>
-                                    
-                                        <div class="mb-2">
-                                            <input type="email" class="form-control" id="email" placeholder="Email Address">
-                                        </div>
-                                        <div class="mb-2">
-                                            <p class="mb-0 text-center">OR</p>
-                                        </div>
-                                        <div class="mb-3">
-                                            <input type="text" class="form-control" id="Mobile" placeholder="Mobile No.">
-                                        </div>
-                                        <div class="d-flex justify-content-between">
-                                            <button type="submit" class="btn me-2 btn1 w-100">Submit</button>
-                                            <button type="submit" class="btn ms-2 btn2 w-100">Cancel</button>
-                                        </div>
-                                    </form>
+                            <form>
+                                <div class="form-group">
+
+                                    <input type="email" class="form-control" id="email" placeholder="Email Address"
+                                        required>
+                                </div>
+                                <div class="form-group">
+
+                                    <input type="password" class="form-control" id="password" placeholder="Password"
+                                        required>
+                                </div>
+                                <div class="form-group">
+
+                                    <select class="form-select custom-select" id="location">
+                                        <option selected>Select Location</option>
+                                        <option value="1">Location 1</option>
+                                        <option value="2">Location 2</option>
+                                        <option value="3">Location 3</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn1 w-100">Log In</button>
+                            </form>
                             <div class="text-center mt-3">
-                                
+                                <a href="forget-password.html">Forgot Password?</a>
                             </div>
                             <div class="footer_copy_right">
                                 <p class="footer-text">
-                                    Copyright 2024 <a href="#">Praj Industries Ltd</a> | All Rights Reserved
+                                    Copyright 2024 <a href="index.html">Praj Industries Ltd</a> | All Rights Reserved
                                 </p>
                             </div>
 

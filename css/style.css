@@ -32,6 +32,13 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: var(--btn1-color);
+    text-decoration: none;
+}
+h5{
+    color: #1C326C;
+}
 
 
 .btn1 {
@@ -101,7 +108,7 @@ a {
     margin: 0;
 }
 
-.custom-select{
+.custom-select {
     background-color: #f0f2f5;
     border: 1px solid #d1d3d6;
     border-radius: 10px;
@@ -111,8 +118,53 @@ a {
     font-size: 14px;
     font-weight: 500;
 }
-/* ==============Login page================ */
 
+/* ==============Login page================ */
+.login_name {
+    background: var(--primary-color);
+    color: #FFFFFF;
+    border-radius: 50%;
+    padding: 3px 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login_section .login-form {
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.login_section .form-group {
+    margin-bottom: 1rem;
+}
+
+.login_section .footer_copy_right {
+    justify-content: center;
+    display: flex;
+    align-items: end;
+    height: 130px;
+}
+
+.login_section .footer-text {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    color: #8B8B8B;
+}
+
+.login_section h3 {
+    font-size: 40px;
+    font-weight: 400;
+}
 
 .login_section input[type] {
     padding: 10px 20px;
@@ -121,11 +173,21 @@ a {
     background: #F5F7F9;
 }
 
-.login_section .form-select {
-    padding: 10px 20px;
+.login_section .custom-select {
     border-radius: 16px;
     border: 1px solid #D5E8FA;
-    background: #F5F7F9;
+    background-color: #F5F7F9;
+    border-radius: 16px;
+    padding: 10px 20px;
+    height: 42px;
+    color: #212529;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.login_section .custom-input {
+    border: 1px solid #D5E8FA !important;
+    background-color: #F5F7F9 !important;
 }
 
 .login_section {
@@ -137,38 +199,6 @@ a {
     display: flex;
     align-items: center;
 }
-
-.login_section .form-side {
-    height: 100vh;
-    position: fixed;
-    right: 0;
-    top: 0;
-    background-color: #ffffff;
-}
-
-.login_section .login_title {
-    font-size: 30px;
-    font-weight: 400;
-}
-
-p {
-    color: #8B8B8B;
-}
-
-.login_section a:hover {
-    color: var(--a-hover);
-    text-decoration: underline;
-}
-
-.login_name {
-    background: var(--primary-color);
-    color: #FFFFFF;
-    border-radius: 50%;
-    padding: 3px 10px;
-    font-size: 20px;
-    font-weight: 700;
-}
-
 
 
 /* ==============dashboard Screen page================ */
@@ -259,6 +289,7 @@ p {
 .landing_screen_section .hight_class {
     padding: 50px 0 150px 0;
 }
+
 
 .card_section .card_set_class {
     margin-top: -123px;
@@ -1060,7 +1091,7 @@ td {
 /* =================================================== */
 
 .nowrap_class table tr,
-.nowrap_class  table td {
+.nowrap_class table td {
     font-size: 16px;
     text-wrap: nowrap;
     text-align: start;
@@ -1078,6 +1109,10 @@ td {
     }
 }
 
+
+
+
+
 @media(max-width:1900px) {
 
     .cafeteria_add_menu .center_label,
@@ -1088,6 +1123,14 @@ td {
 }
 
 @media(max-width:1300px) {
+
+    .login_section .form-control {
+        font-size: 14px;
+    }
+
+    .login_section .custom-input {
+        font-size: 14px;
+    }
 
     .cafeteria_cards {
         padding: 15px;
@@ -1185,14 +1228,14 @@ td {
         position: unset;
     }
 
-    .login_section input[type],
+    /* .login_section input[type],
     .login_section .form-select,
     .btn {
         padding: 8px 20px;
         border-radius: 16px;
         border: none;
         font-size: 12px;
-    }
+    } */
 
     .login_section p {
         font-size: 13px;
@@ -1243,7 +1286,25 @@ td {
     .meeting_room .btn {
         font-size: 14px;
     }
+    
+.landing_screen_section .hight_class img{
+    width: 150px !important ;
+}
 
+.landing_screen_section .dropdown-toggle:after {
+    border: solid #000000;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(45deg);
+    margin-left: 8px;
+}
+.landing_screen_section  a span{
+    color: #000000 !important;
+}
+span.login_name {
+    color: #FFFFFF !important;
+}
 }
 
 
