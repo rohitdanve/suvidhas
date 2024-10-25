@@ -561,6 +561,15 @@ td {
 .my_booking_section .status-active {
     color: green;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.my_booking_section .status-active span{
+    color: green;
+    font-weight: bold;
+    font-size: 26px;
+    margin-right: 10px;
 }
 
 .my_booking_section .status-delivered {
