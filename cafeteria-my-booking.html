@@ -9,11 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" href="css/sidebar.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" rel="stylesheet">
-    <style>
-
-    </style>
 </head>
 
 <body data-theme="default" data-layout="fluid" data-sidebar-position="left" data-sidebar-behavior="sticky"
@@ -35,41 +33,59 @@
                     <li class="sidebar-item"><a class="sidebar-link active" href="cafeteria-my-booking.html"><i
                                 class="border-0 bi bi-journal-check h4"></i> Booking </a>
                     </li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="cafeteria-my-cart.html"><i class="border-0 bi bi-cart h4"></i> My
+                    <li class="sidebar-item"><a class="sidebar-link" href="cafeteria-my-cart.html"><i
+                                class="border-0 bi bi-cart h4"></i> My
                             Cart </a>
                     </li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="cafeteria-order-food.html"><i class="border-0 bi bi-people h4"></i>
+                    <li class="sidebar-item"><a class="sidebar-link" href="cafeteria-order-food.html"><i
+                                class="border-0 bi bi-people h4"></i>
                             Visitor Food Booking </a>
                     </li>
 
                     <li class="sidebar-item"><a role="button" class="sidebar-link collapsed " data-bs-target="#id-1"
-                        data-bs-toggle="collapse"><i class="border-0 bi bi-person h4"></i> Admin</a>
-                    <ul id="id-1" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                        <li class="sidebar-item "><a class="sidebar-link" href="cafeteria-view-all-menu.html">View all menu</a></li>
-                        <li class="sidebar-item"><a class="sidebar-link " href="cafeteria-view-all-order.html"> View all orders</a></li>
-                        <li class="sidebar-item"><a class="sidebar-link " href="cafeteria-view-add-food-item.html"> Add food item</a></li>
-                        <li class="sidebar-item"><a class="sidebar-link" href=""> Category master</a></li>
-                        <li class="sidebar-item"><a class="sidebar-link" href="">Location matser</a></li>
-                        <li class="sidebar-item"><a class="sidebar-link" href="cafeteria-order-data-entry.html">Order data entry</a></li>
-                        <li class="sidebar-item"><a class="sidebar-link" href="cafeteria-add-new-user.html">User Master</a></li>
-                        <li class="sidebar-item"><a class="sidebar-link" href="cafeteria-visitors-data-entry.html">Visitor data entry</a></li>
+                            data-bs-toggle="collapse"><i class="border-0 bi bi-person h4"></i> Admin</a>
+                        <ul id="id-1" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item "><a class="sidebar-link" href="cafeteria-view-all-menu.html">View
+                                    all menu</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link " href="cafeteria-view-all-order.html"> View
+                                    all orders</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link " href="cafeteria-view-add-food-item.html">
+                                    Add food item</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href=""> Category master</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="">Location matser</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link"
+                                    href="cafeteria-order-data-entry.html">Order data entry</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="cafeteria-add-new-user.html">User
+                                    Master</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link"
+                                    href="cafeteria-visitors-data-entry.html">Visitor data entry</a></li>
 
-                    </ul>
-                </li>
-                <li class="sidebar-item"><a role="button" class="sidebar-link collapsed" data-bs-target="#id-2"
-                        data-bs-toggle="collapse"><i class="border-0 bi bi-journal-richtext h4"></i> Report</a>
-                    <ul id="id-2" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                        <li class="sidebar-item"><a class="sidebar-link" href="cafeteria-menu-itemwise-comsuption-report.html">Item wise status</a></li>
-                        <li class="sidebar-item"><a class="sidebar-link" href="cafeteria-order-revenue-summary-report.html">Order revenue summary report</a></li>
-                        <li class="sidebar-item"><a class="sidebar-link" href="cafeteria-userwise-monthly-report.html">User vise monthly report</a></li>
-                        <li class="sidebar-item"><a class="sidebar-link" href="cafeteria-departmentwise-visitor-report.html">Department wise guest summary report</a></li>
-                        <li class="sidebar-item"><a class="sidebar-link" href="">Location wise employee orders detail report</a></li>
-                        <li class="sidebar-item"><a class="sidebar-link" href="">Location wise deduction report</a></li>
-                        <li class="sidebar-item"><a class="sidebar-link" href="">Menu name wise amount summary report</a></li>
-                        <li class="sidebar-item"><a class="sidebar-link" href="">Department wise summary report</a></li>
-                       
-                    </ul>
-                </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item"><a role="button" class="sidebar-link collapsed" data-bs-target="#id-2"
+                            data-bs-toggle="collapse"><i class="border-0 bi bi-journal-richtext h4"></i> Report</a>
+                        <ul id="id-2" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item"><a class="sidebar-link"
+                                    href="cafeteria-menu-itemwise-comsuption-report.html">Item wise status</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link"
+                                    href="cafeteria-order-revenue-summary-report.html">Order revenue summary report</a>
+                            </li>
+                            <li class="sidebar-item"><a class="sidebar-link"
+                                    href="cafeteria-userwise-monthly-report.html">User vise monthly report</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link"
+                                    href="cafeteria-departmentwise-visitor-report.html">Department wise guest summary
+                                    report</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="">Location wise employee orders
+                                    detail report</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="">Location wise deduction report</a>
+                            </li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="">Menu name wise amount summary
+                                    report</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="">Department wise summary report</a>
+                            </li>
+
+                        </ul>
+                    </li>
 
                 </ul>
             </div>
@@ -122,114 +138,153 @@
             <section class="content flex-grow-0 my_booking_section">
                 <div class="container">
                     <div class="row">
-                            <div class="col-lg-8 col-md-12 col-12">
-                                   <!-- Filter section with labels -->
-                                   <div class="filter-container w-auto">
-                                    <div class="filter-group pe-4">
-                                        <label class="pe-2" for="fromDate">From Date</label>
-                                        <input type="date" id="fromDate">
-                                    </div>
-                                    <div class="filter-group pe-4">
-                                        <label class="pe-2" for="toDate">To Date</label>
-                                        <input type="date" id="toDate">
-                                    </div>
-                                    <button type="button" class="search-button">Search</button>
+                        <div class="col-xxl-8 col-xl-10 col-lg-12 col-md-12 col-12">
+                            <!-- Filter section with labels -->
+                            <div class="filter-container w-auto">
+                                <div class="filter-group pe-4">
+                                    <label class="pe-2" for="fromDate">From Date</label>
+                                    <input type="date" id="fromDate">
                                 </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="table-responsive">
-                                    <!-- Orders Table -->
-                                    <table class="table table-striped table-hover">                             
-                                        <thead>
-                                            <tr>
-                                                <th>Order Id</th>
-                                                <th>Date</th>
-                                                <th>Location</th>
-                                                <th>Quantity</th>
-                                                <th>Price</th>
-                                                <th>Status</th>
-                                                <th>Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>383224</td>
-                                                <td>05/07/24</td>
-                                                <td>Praj Tower (Hinjewadi)</td>
-                                                <td>1</td>
-                                                <td>60</td>
-                                                <td class="status-active"><span>•</span> Active</td>
-                                                <td><button class="btn-view">View Details</button></td>
-                                            </tr>
-                                            <tr>
-                                                <td>383224</td>
-                                                <td>05/07/24</td>
-                                                <td>(Praj - Sanswadi)</td>
-                                                <td>2</td>
-                                                <td>30</td>
-                                                <td class="status-delivered">Delivered</td>
-                                                <td><button class="btn-view">View Details</button></td>
-                                            </tr>
-                                            <tr>
-                                                <td>383224</td>
-                                                <td>05/07/24</td>
-                                                <td>Praj Tower (Hinjewadi)</td>
-                                                <td>1</td>
-                                                <td>60</td>
-                                                <td class="status-active"><span>•</span> Active</td>
-                                                <td><button class="btn-view">View Details</button></td>
-                                            </tr>
-                                            <tr>
-                                                <td>383224</td>
-                                                <td>05/07/24</td>
-                                                <td>(Praj - Sanswadi)</td>
-                                                <td>2</td>
-                                                <td>30</td>
-                                                <td class="status-delivered">Delivered</td>
-                                                <td><button class="btn-view">View Details</button></td>
-                                            </tr>
-                                            <tr>
-                                                <td>383224</td>
-                                                <td>05/07/24</td>
-                                                <td>Praj Tower (Hinjewadi)</td>
-                                                <td>1</td>
-                                                <td>60</td>
-                                                <td class="status-active"><span>•</span> Active</td>
-                                                <td><button class="btn-view">View Details</button></td>
-                                            </tr>
-                                            <tr>
-                                                <td>383224</td>
-                                                <td>05/07/24</td>
-                                                <td>(Praj - Sanswadi)</td>
-                                                <td>2</td>
-                                                <td>30</td>
-                                                <td class="status-delivered">Delivered</td>
-                                                <td><button class="btn-view">View Details</button></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                <div class="filter-group pe-4">
+                                    <label class="pe-2" for="toDate">To Date</label>
+                                    <input type="date" id="toDate">
                                 </div>
-                            </div>
-                            
-                    </div>
-                </div>
-
-            </section>
-
-
-            <section class="">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="text-center bg-white shadow-sm p-3 rounded-2 mb-5 mx-5">
-                                <a href="" class="fw-bolder">Click here for canteen guidlines</a>
+                                <button type="button" class="search-button">Search</button>
                             </div>
                         </div>
+                        <div class="col-lg-12">
+                            <div class="table-responsive pt-3 px-2">
+                                <!-- Orders Table -->
+                                <table id="example2" class="table table-striped table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Order Id</th>
+                                            <th>Date</th>
+                                            <th>Location</th>
+                                            <th>Quantity</th>
+                                            <th>Price</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>383224</td>
+                                            <td>05/07/24</td>
+                                            <td>Praj Tower (Hinjewadi)</td>
+                                            <td>1</td>
+                                            <td>60</td>
+                                            <td class="status-active"><span>•</span> Active</td>
+                                            <td><button class="btn-view">View Details</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>383224</td>
+                                            <td>05/07/24</td>
+                                            <td>(Praj - Sanswadi)</td>
+                                            <td>2</td>
+                                            <td>30</td>
+                                            <td class="status-delivered">Delivered</td>
+                                            <td><button class="btn-view">View Details</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>383224</td>
+                                            <td>05/07/24</td>
+                                            <td>Praj Tower (Hinjewadi)</td>
+                                            <td>1</td>
+                                            <td>60</td>
+                                            <td class="status-active"><span>•</span> Active</td>
+                                            <td><button class="btn-view">View Details</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>383224</td>
+                                            <td>05/07/24</td>
+                                            <td>(Praj - Sanswadi)</td>
+                                            <td>2</td>
+                                            <td>30</td>
+                                            <td class="status-delivered">Delivered</td>
+                                            <td><button class="btn-view">View Details</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>383224</td>
+                                            <td>05/07/24</td>
+                                            <td>Praj Tower (Hinjewadi)</td>
+                                            <td>1</td>
+                                            <td>60</td>
+                                            <td class="status-active"><span>•</span> Active</td>
+                                            <td><button class="btn-view">View Details</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>383224</td>
+                                            <td>05/07/24</td>
+                                            <td>(Praj - Sanswadi)</td>
+                                            <td>2</td>
+                                            <td>30</td>
+                                            <td class="status-delivered">Delivered</td>
+                                            <td><button class="btn-view">View Details</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>383224</td>
+                                            <td>05/07/24</td>
+                                            <td>(Praj - Sanswadi)</td>
+                                            <td>2</td>
+                                            <td>30</td>
+                                            <td class="status-delivered">Delivered</td>
+                                            <td><button class="btn-view">View Details</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>383224</td>
+                                            <td>05/07/24</td>
+                                            <td>Praj Tower (Hinjewadi)</td>
+                                            <td>1</td>
+                                            <td>60</td>
+                                            <td class="status-active"><span>•</span> Active</td>
+                                            <td><button class="btn-view">View Details</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>383224</td>
+                                            <td>05/07/24</td>
+                                            <td>(Praj - Sanswadi)</td>
+                                            <td>2</td>
+                                            <td>30</td>
+                                            <td class="status-delivered">Delivered</td>
+                                            <td><button class="btn-view">View Details</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>383224</td>
+                                            <td>05/07/24</td>
+                                            <td>(Praj - Sanswadi)</td>
+                                            <td>2</td>
+                                            <td>30</td>
+                                            <td class="status-delivered">Delivered</td>
+                                            <td><button class="btn-view">View Details</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>383224</td>
+                                            <td>05/07/24</td>
+                                            <td>Praj Tower (Hinjewadi)</td>
+                                            <td>1</td>
+                                            <td>60</td>
+                                            <td class="status-active"><span>•</span> Active</td>
+                                            <td><button class="btn-view">View Details</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>383224</td>
+                                            <td>05/07/24</td>
+                                            <td>(Praj - Sanswadi)</td>
+                                            <td>2</td>
+                                            <td>30</td>
+                                            <td class="status-delivered">Delivered</td>
+                                            <td><button class="btn-view">View Details</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
+
             </section>
-
-
 
         </div><!--main-->
     </div><!--wrapper-->
@@ -240,6 +295,8 @@
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/table-datatable.js"></script>
 </body>
 
 </html>

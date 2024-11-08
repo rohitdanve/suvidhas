@@ -459,6 +459,7 @@ td {
     font-weight: 500;
     padding: 5px 10px;
     font-size: 18px;
+    white-space:nowrap;
 }
 
 /* Apply border-radius to the first and last td in each row */
@@ -485,6 +486,18 @@ td {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border: 0;
+}
+
+
+.cafeteria-menu_section .nav-pills .nav-link.active{
+background: unset;
+color: var(--btn1-color);
+font-weight: 600;
+}
+
+.cafeteria-menu_section .nav-pills .nav-link{
+    color: var(--secondary-color);
+    font-weight: 600;
 }
 
 /* ====================my-booking section============================= */
